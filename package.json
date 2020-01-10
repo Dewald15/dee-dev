@@ -32,7 +32,7 @@
         "format:write": "./node_modules/.bin/nx format:write",
         "format:check": "./node_modules/.bin/nx format:check",
         "// git processes": "",
-        "git": "git add . && git commit -m \" dee-dev - commit\" && git push",
+        "git": "git add . && git commit -m \" dee-dev - commit\" && git push --set-upstream origin master",
         "// deployProcesses": "",
         "deploy": "yarn build:dee-dev && echo \"build done\" && firebase deploy && echo \"firebase deploy done\" && yarn git && echo \"commit done\" ",
         "// unused from spwn": "",

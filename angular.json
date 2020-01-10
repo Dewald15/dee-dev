@@ -1,0 +1,228 @@
+{
+    "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+    "version": 1,
+    "newProjectRoot": "",
+    "schematics": {
+        "@schematics/angular:component": {
+            "changeDetection": "OnPush"
+        }
+    },
+    "projects": {
+        "blueCircle": {
+            "root": "apps/blueCircle/blueCircle/",
+            "sourceRoot": "apps/blueCircle/blueCircle/src",
+            "projectType": "application",
+            "prefix": "app",
+            "schematics": {},
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-angular:browser",
+                    "options": {
+                        "outputPath": "dist",
+                        "index": "apps/blueCircle/blueCircle/src/index.html",
+                        "main": "apps/blueCircle/blueCircle/src/main.ts",
+                        "polyfills": "apps/blueCircle/blueCircle/src/polyfills.ts",
+                        "tsConfig": "apps/blueCircle/blueCircle/tsconfig.app.json",
+                        "assets": [
+                            "apps/blueCircle/blueCircle/src/favicon.ico",
+                            "apps/blueCircle/blueCircle/src/assets",
+                            "apps/blueCircle/blueCircle/src/assets/images",
+                            "apps/blueCircle/blueCircle/src/assets/images/background",
+                            "apps/blueCircle/blueCircle/src/assets/images/logo",
+                            "apps/blueCircle/blueCircle/src/assets/images/icons",
+                            {
+                                "glob": "**/*",
+                                "input": "libs/components/coming-soon/src/lib/assets",
+                                "output": "/assets"
+                            }
+                        ],
+                        "styles": [
+                            "apps/blueCircle/blueCircle/src/styles.css",
+                            "libs/components/assets/styles.css",
+                            "libs/components/assets/fonts.css",
+                            "libs/components/assets/media.css"
+                        ],
+                        "scripts": [
+                            "node_modules/jquery/dist/jquery.min.js",
+                            "apps/blueCircle/blueCircle/src/assets/form-submission-handler.js"
+                        ]
+                    },
+                    "configurations": {
+                        "next": {
+                            "optimization": true,
+                            "outputHashing": "all",
+                            "sourceMap": false,
+                            "extractCss": true,
+                            "namedChunks": false,
+                            "aot": true,
+                            "extractLicenses": true,
+                            "vendorChunk": false,
+                            "buildOptimizer": true,
+                            "fileReplacements": [{
+                                "replace": "apps/blueCircle/blueCircle/src/environments/environment.ts",
+                                "with": "apps/blueCircle/blueCircle/src/environments/environment.next.ts"
+                            }]
+                        },
+                        "prod": {
+                            "optimization": true,
+                            "outputHashing": "all",
+                            "sourceMap": false,
+                            "extractCss": true,
+                            "namedChunks": false,
+                            "aot": true,
+                            "extractLicenses": true,
+                            "vendorChunk": false,
+                            "buildOptimizer": true,
+                            "fileReplacements": [{
+                                "replace": "apps/blueCircle/blueCircle/src/environments/environment.ts",
+                                "with": "apps/blueCircle/blueCircle/src/environments/environment.prod.ts"
+                            }]
+                        }
+                    }
+                },
+                "serve": {
+                    "builder": "@angular-devkit/build-angular:dev-server",
+                    "options": {
+                        "browserTarget": "blueCircle:build"
+                    },
+                    "configurations": {
+                        "next": {
+                            "browserTarget": "blueCircle:build:next"
+                        },
+                        "prod": {
+                            "browserTarget": "blueCircle:build:prod"
+                        }
+                    }
+                },
+                "extract-i18n": {
+                    "builder": "@angular-devkit/build-angular:extract-i18n",
+                    "options": {
+                        "browserTarget": "blueCircle:build"
+                    }
+                },
+                "test": {
+                    "builder": "@angular-devkit/build-angular:karma",
+                    "options": {
+                        "main": "apps/blueCircle/blueCircle/src/test.ts",
+                        "polyfills": "apps/blueCircle/blueCircle/src/polyfills.ts",
+                        "tsConfig": "apps/blueCircle/blueCircle/tsconfig.spec.json",
+                        "karmaConfig": "apps/blueCircle/blueCircle/karma.conf.js",
+                        "styles": [
+                            "apps/blueCircle/blueCircle/src/styles.css"
+                        ],
+                        "scripts": [],
+                        "assets": [
+                            "apps/blueCircle/blueCircle/src/favicon.ico",
+                            "apps/blueCircle/blueCircle/src/assets"
+                        ]
+                    }
+                },
+                "lint": {
+                    "builder": "@angular-devkit/build-angular:tslint",
+                    "options": {
+                        "tsConfig": [
+                            "apps/blueCircle/blueCircle/tsconfig.app.json",
+                            "apps/blueCircle/blueCircle/tsconfig.spec.json"
+                        ],
+                        "exclude": [
+                            "**/node_modules/**"
+                        ]
+                    }
+                }
+            }
+        },
+        "blueCirclei-e2e": {
+            "root": "apps/blueCircle/blueCircle-e2e/",
+            "projectType": "application",
+            "architect": {
+                "e2e": {
+                    "builder": "@angular-devkit/build-angular:protractor",
+                    "options": {
+                        "protractorConfig": "apps/blueCircle/blueCircle-e2e/protractor.conf.js",
+                        "devServerTarget": "blueCircle:serve"
+                    },
+                    "configurations": {
+                        "production": {
+                            "devServerTarget": "blueCircle:serve:production"
+                        }
+                    }
+                },
+                "lint": {
+                    "builder": "@angular-devkit/build-angular:tslint",
+                    "options": {
+                        "tsConfig": "apps/blueCircle/blueCircle-e2e/tsconfig.e2e.json",
+                        "exclude": [
+                            "**/node_modules/**"
+                        ]
+                    }
+                }
+            }
+        },
+        "core-router": {
+            "root": "libs/core/router",
+            "sourceRoot": "libs/core/router/src",
+            "projectType": "library",
+            "architect": {
+                "test": {
+                    "builder": "@angular-devkit/build-angular:karma",
+                    "options": {
+                        "main": "libs/core/router/src/test.ts",
+                        "karmaConfig": "libs/core/router/karma.conf.js",
+                        "scripts": [],
+                        "styles": [],
+                        "assets": [],
+                        "tsConfig": "libs/core/router/tsconfig.spec.json"
+                    }
+                },
+                "lint": {
+                    "builder": "@angular-devkit/build-angular:tslint",
+                    "options": {
+                        "tsConfig": [
+                            "libs/core/router/tsconfig.lib.json",
+                            "libs/core/router/tsconfig.spec.json"
+                        ],
+                        "exclude": [
+                            "**/node_modules/**"
+                        ]
+                    }
+                }
+            },
+            "prefix": "router"
+        },
+        "components-ui": {
+            "root": "libs/components/ui",
+            "sourceRoot": "libs/components/ui/src",
+            "projectType": "library",
+            "prefix": "blueCircle",
+            "architect": {
+                "test": {
+                    "builder": "@angular-devkit/build-angular:karma",
+                    "options": {
+                        "main": "libs/components/ui/src/test.ts",
+                        "tsConfig": "libs/components/ui/tsconfig.spec.json",
+                        "karmaConfig": "libs/components/ui/karma.conf.js"
+                    }
+                },
+                "lint": {
+                    "builder": "@angular-devkit/build-angular:tslint",
+                    "options": {
+                        "tsConfig": [
+                            "libs/components/ui/tsconfig.lib.json",
+                            "libs/components/ui/tsconfig.spec.json"
+                        ],
+                        "exclude": [
+                            "**/node_modules/**"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "defaultProject": "blueCircle",
+    "cli": {
+        "warnings": {
+            "typescriptMismatch": false
+        },
+        "defaultCollection": "@nrwl/schematics"
+    }
+}

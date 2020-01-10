@@ -1,0 +1,551 @@
+.home-container.landscape,
+.home-container {
+   position          : absolute;
+   width             : 100%;
+   height            : 100%;
+   display           : -webkit-box;
+   display           : -ms-flexbox;
+   display           : flex;
+   -webkit-box-align : center;
+   -ms-flex-align    : center;
+   align-items       : center;
+   -webkit-box-pack  : center;
+   -ms-flex-pack     : center;
+   justify-content   : center;
+   opacity           : 0;
+   -webkit-transition: all 200ms cubic-bezier(0.415, 0.145, 0.065, 0.915) !important;
+   transition        : all 200ms cubic-bezier(0.415, 0.145, 0.065, 0.915) !important;
+}
+
+.home-container.home-container.landscape.home,
+.home-container.home {
+   opacity           : 1;
+   -webkit-transition: all 200ms cubic-bezier(0.415, 0.145, 0.065, 0.915) !important;
+   transition        : all 200ms cubic-bezier(0.415, 0.145, 0.065, 0.915) !important;
+}
+
+/* .home-image {
+   position: fixed;
+display    : flex;
+width      : 200%;
+opacity    : 0.3;
+} */
+
+.home-container.landscape .home-text-container,
+.home-text-container {
+   position             : relative;
+   width                : inherit;
+   height               : inherit;
+   -webkit-box-orient   : vertical;
+   -webkit-box-direction: normal;
+   -ms-flex-direction   : column;
+   flex-direction       : column;
+   display              : -webkit-box;
+   display              : -ms-flexbox;
+   display              : flex;
+   -webkit-box-align    : center;
+   -ms-flex-align       : center;
+   align-items          : center;
+   -webkit-box-pack     : center;
+   -ms-flex-pack        : center;
+   justify-content      : center;
+}
+
+
+/* welcome ===================== */
+/* translate(-30%, 7%) scale(0.8) */
+.home-container.landscape svg.intro,
+svg.intro {
+   position             : relative;
+   display              : -webkit-box;
+   display              : -ms-flexbox;
+   display              : flex;
+   width                : inherit;
+   height               : inherit;
+   -webkit-box-orient   : vertical;
+   -webkit-box-direction: normal;
+   -ms-flex-direction   : column;
+   flex-direction       : column;
+   -ms-flex-wrap        : nowrap;
+   flex-wrap            : nowrap;
+   -webkit-box-pack     : center;
+   -ms-flex-pack        : center;
+   justify-content      : center;
+   -webkit-box-align    : center;
+   -ms-flex-align       : center;
+   align-items          : center;
+   -ms-flex-line-pack   : center;
+   align-content        : center;
+   overflow             : visible;
+}
+
+.home-container.landscape svg.intro .text,
+svg.intro .text {
+   display: none;
+   fill   : none;
+}
+
+.home-container.landscape svg.intro.go .text,
+svg.intro.go .text {
+   position         : absolute;
+   display          : block;
+   font-size        : calc(1 * var(--fontSize));
+   width            : inherit;
+   /* height        : 100%; */
+   fill             : none;
+   stroke           : #ffffff63;
+   stroke-width     : 2.8px;
+   stroke-dashoffset: -900;
+   stroke-dasharray : 900;
+   stroke-linecap   : round;
+   stroke-linejoin  : round;
+   -webkit-animation: dash 2.5s ease-in-out forwards;
+   animation        : dash 2.5s ease-in-out forwards;
+}
+
+/* .home-container.landscape svg.intro.go .text,
+svg.intro.go .text {
+   fill             : white;
+   transition       : all 0.05s 7.5s ease-in-out;
+} */
+
+.home-container.landscape svg.intro.go .text-stroke:nth-child(1),
+svg.intro.go .text-stroke:nth-child(1) {
+   -webkit-animation: dash 1.5s ease-in-out forwards;
+   animation        : dash 1.5s ease-in-out forwards;
+}
+
+.home-container.landscape svg.intro.go .text-stroke:nth-child(2),
+svg.intro.go .text-stroke:nth-child(2) {
+   -webkit-animation-delay: 1.2s;
+   animation-delay        : 1.2s;
+}
+
+.home-container.landscape svg.intro.go .text-stroke:nth-child(3),
+svg.intro.go .text-stroke:nth-child(3) {
+   -webkit-animation-delay: 1.4s;
+   animation-delay        : 1.4s;
+}
+
+.home-container.landscape svg.intro.go .text-stroke:nth-child(4),
+svg.intro.go .text-stroke:nth-child(4) {
+   -webkit-animation-delay: 4.4s;
+   animation-delay        : 4.4s;
+}
+
+.home-container.landscape svg.intro.go .text-stroke:nth-child(5),
+svg.intro.go .text-stroke:nth-child(5) {
+   -webkit-animation-delay: 4.6s;
+   animation-delay        : 4.6s;
+}
+
+.home-container.landscape svg.intro.go .text-stroke:nth-child(6),
+svg.intro.go .text-stroke:nth-child(6) {
+   -webkit-animation-delay: 5s;
+   animation-delay        : 5s;
+}
+
+.home-container.landscape svg.intro.go .text-stroke:nth-child(7),
+svg.intro.go .text-stroke:nth-child(7) {
+   -webkit-animation-delay: 5.2s;
+   animation-delay        : 5.2s;
+}
+
+.home-container.landscape svg.intro.go .text-stroke:nth-child(8),
+svg.intro.go .text-stroke:nth-child(8) {
+   -webkit-animation-delay: 6.2s;
+   animation-delay        : 6.2s;
+}
+
+.home-container.landscape svg.intro.go .text-stroke-one,
+svg.intro.go .text-stroke-one {
+   stroke                    : #ffffff;
+   /* animation-delay        : 0.6s; */
+   -webkit-animation-duration: 2.5s;
+   animation-duration        : 2.5s;
+}
+
+.home-container.landscape svg.intro.go .text-stroke-two,
+svg.intro.go .text-stroke-two {
+   stroke                 : #ffffff;
+   -webkit-animation-delay: 2s;
+   animation-delay        : 2s;
+}
+
+.home-container.landscape svg.intro.go .text-stroke-three,
+svg.intro.go .text-stroke-three {
+   stroke                 : #ffffff;
+   -webkit-animation-delay: 2.2s;
+   animation-delay        : 2.2s;
+}
+
+.home-container.landscape svg.intro.go .text-stroke-four,
+svg.intro.go .text-stroke-four {
+   stroke                 : #ffffff;
+   -webkit-animation-delay: 5.2s;
+   animation-delay        : 5.2s;
+}
+
+.home-container.landscape svg.intro.go .text-stroke-five,
+svg.intro.go .text-stroke-five {
+   stroke                 : #ffffff;
+   -webkit-animation-delay: 5.4s;
+   animation-delay        : 5.4s;
+}
+
+.home-container.landscape svg.intro.go .text-stroke-six,
+svg.intro.go .text-stroke-six {
+   stroke                 : #ffffff;
+   -webkit-animation-delay: 5.8s;
+   animation-delay        : 5.8s;
+}
+
+.home-container.landscape svg.intro.go .text-stroke-seven,
+svg.intro.go .text-stroke-seven {
+   stroke                 : #ffffff;
+   -webkit-animation-delay: 6s;
+   animation-delay        : 6s;
+}
+
+.home-container.landscape svg.intro.go .text-stroke-eight,
+svg.intro.go .text-stroke-eight {
+   stroke                 : #ffffff;
+   -webkit-animation-delay: 7s;
+   animation-delay        : 7s;
+}
+
+.home-container.landscape svg.intro.go .text.text-one,
+svg.intro.go .text.text-one,
+.home-container.landscape svg.intro.go .text-stroke.text-stroke-one,
+svg.intro.go .text-stroke.text-stroke-one {
+   -webkit-transform-origin: top;
+   transform-origin        : top;
+   -webkit-transform       : scale(3.5) translate(50%, 2.5%);
+   transform               : scale(3.5) translate(50%, 2.5%);
+}
+
+.home-container.landscape svg.intro.go .text.text-two,
+svg.intro.go .text.text-two,
+.home-container.landscape svg.intro.go .text-stroke.text-stroke-two,
+svg.intro.go .text-stroke.text-stroke-two {
+   -webkit-transform-origin: top;
+   transform-origin        : top;
+   -webkit-transform       : scale(1.8) translate(50%, 9%);
+   transform               : scale(1.8) translate(50%, 9%);
+}
+
+.home-container.landscape svg.intro.go .text.text-three,
+svg.intro.go .text.text-three,
+.home-container.landscape svg.intro.go .text-stroke.text-stroke-three,
+svg.intro.go .text-stroke.text-stroke-three {
+   -webkit-transform-origin: top;
+   transform-origin        : top;
+   -webkit-transform       : scale(1.8) translate(50%, 12%);
+   transform               : scale(1.8) translate(50%, 12%);
+}
+
+.home-container.landscape svg.intro.go .text.text-four,
+svg.intro.go .text.text-four,
+.home-container.landscape svg.intro.go .text-stroke.text-stroke-four,
+svg.intro.go .text-stroke.text-stroke-four {
+   -webkit-transform-origin: top;
+   transform-origin        : top;
+   -webkit-transform       : scale(1.7) translate(50%, 42%);
+   transform               : scale(1.7) translate(50%, 42%);
+}
+
+
+.home-container.landscape svg.intro.go .text.text-five,
+svg.intro.go .text.text-five,
+.home-container.landscape svg.intro.go .text-stroke.text-stroke-five,
+svg.intro.go .text-stroke.text-stroke-five {
+   -webkit-transform-origin: top;
+   transform-origin        : top;
+   -webkit-transform       : scale(1.6) translate(50%, 47.5%);
+   transform               : scale(1.6) translate(50%, 47.5%);
+}
+
+.home-container.landscape svg.intro.go .text.text-six,
+svg.intro.go .text.text-six,
+.home-container.landscape svg.intro.go .text-stroke.text-stroke-six,
+svg.intro.go .text-stroke.text-stroke-six {
+   -webkit-transform-origin: top;
+   transform-origin        : top;
+   -webkit-transform       : scale(1.5) translate(50%, 55.5%);
+   transform               : scale(1.5) translate(50%, 55.5%);
+}
+
+
+.home-container.landscape svg.intro.go .text.text-seven,
+svg.intro.go .text.text-seven,
+.home-container.landscape svg.intro.go .text-stroke.text-stroke-seven,
+svg.intro.go .text-stroke.text-stroke-seven {
+   -webkit-transform-origin: top;
+   transform-origin        : top;
+   -webkit-transform       : scale(1.5) translate(50%, 58%);
+   transform               : scale(1.5) translate(50%, 58%);
+}
+
+.home-container.landscape svg.intro.go .text.text-eight,
+svg.intro.go .text.text-eight,
+.home-container.landscape svg.intro.go .text-stroke.text-stroke-eight,
+svg.intro.go .text-stroke.text-stroke-eight {
+   -webkit-transform-origin: top;
+   transform-origin        : top;
+   -webkit-transform       : scale(2) translate(50%, 47.5%);
+   transform               : scale(2) translate(50%, 47.5%);
+}
+
+@-webkit-keyframes dash {
+   100% {
+      stroke-dashoffset: 0;
+   }
+}
+
+@keyframes dash {
+   100% {
+      stroke-dashoffset: 0;
+   }
+}
+
+.home-container.landscape .reload,
+.reload {
+   position          : absolute;
+   bottom            : 15px;
+   right             : 15px;
+   background        : #fff;
+   border            : none;
+   border-radius     : 20px;
+   outline           : none !important;
+   font-size         : 11px;
+   line-height       : 1.5;
+   padding           : 8px 12px;
+   /* text-transform : uppercase; */
+   z-index           : 10;
+   cursor            : pointer;
+   -webkit-box-shadow: 0 6px 7px #350e4c;
+   box-shadow        : 0 6px 7px #350e4c;
+   -webkit-transition: all 0.1s cubic-bezier(0.67, 0.13, 0.1, 0.81);
+   transition        : all 0.1s cubic-bezier(0.67, 0.13, 0.1, 0.81);
+}
+
+.home-container.landscape .reload:hover,
+.reload:hover {
+   -webkit-box-shadow: 0 4px 4px #350e4c;
+   box-shadow        : 0 4px 4px #350e4c;
+   -webkit-transform : translateY(1px);
+   transform         : translateY(1px);
+}
+
+.home-container.landscape .reload:active,
+.reload:active {
+   -webkit-box-shadow: 0 1px 2px #244B94;
+   box-shadow        : 0 1px 2px #244B94;
+   -webkit-transform : translateY(2px);
+   transform         : translateY(2px);
+}
+
+.home-container.landscape .reload svg,
+.reload svg {
+   vertical-align: middle;
+   position      : relative;
+   top           : -2px;
+}
+
+/* I am a ================================================================================ */
+.home-container.landscape .rotating-text,
+.rotating-text {
+   display            : -webkit-box;
+   display            : -ms-flexbox;
+   display            : flex;
+   position           : absolute;
+   width              : 100vw;
+   height             : 100%;
+   font-size          : calc(1.5 * var(--fontSize));
+   -webkit-box-pack   : center;
+   -ms-flex-pack      : center;
+   justify-content    : center;
+   -webkit-box-align  : center;
+   -ms-flex-align     : center;
+   align-items        : center;
+   -ms-flex-item-align: center;
+   align-self         : center;
+   -webkit-transform  : translate(-7%, 10%) scale(0);
+   transform          : translate(-7%, 10%) scale(0);
+   -webkit-transition : all 100ms ease-in-out;
+   transition         : all 100ms ease-in-out;
+}
+
+.home-container.landscape .rotating-text.rotating-active,
+.rotating-text.rotating-active {
+   -webkit-transform : translate(-7%, 10%) scale(1);
+   transform         : translate(-7%, 10%) scale(1);
+   -webkit-transition: all 600ms 5.4s ease-in-out;
+   transition        : all 600ms 5.4s ease-in-out;
+}
+
+.home-container.landscape .rotating-text-one,
+.rotating-text-one {
+   position: relative;
+   height  : 1em;
+}
+
+.home-container.landscape div,
+div {
+   display       : inline-block;
+   vertical-align: top;
+   margin        : 0;
+}
+
+.home-container.landscape .word,
+.word {
+   position: absolute;
+   width   : -webkit-max-content;
+   width   : -moz-max-content;
+   width   : max-content;
+   opacity : 0;
+}
+
+.home-container.landscape .letter,
+.letter {
+   -webkit-transform-origin: 50% 50% 25px;
+   transform-origin        : 50% 50% 25px;
+   position                : relative;
+   display                 : inline-block;
+   -webkit-transform       : translateZ(25px) !important;
+   transform               : translateZ(25px) !important;
+}
+
+.home-container.landscape .letter.out,
+.letter.out {
+   -webkit-transform : rotateX(90deg) !important;
+   transform         : rotateX(90deg) !important;
+   -webkit-transition: all 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19) !important;
+   transition        : all 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19) !important;
+}
+
+.home-container.landscape .letter.behind,
+.letter.behind {
+   -webkit-transform: rotateX(-90deg) !important;
+   transform        : rotateX(-90deg) !important;
+}
+
+.home-container.landscape .letter.in,
+.letter.in {
+   -webkit-transform : rotateX(0deg) !important;
+   transform         : rotateX(0deg) !important;
+   -webkit-transition: all 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+   transition        : all 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+
+.home-container.landscape .wisteria,
+.wisteria {
+   color: var(--light-purple);
+}
+
+.home-container.landscape .belize,
+.belize {
+   color: var(--magenta);
+}
+
+.home-container.landscape .pomegranate,
+.pomegranate {
+   color: var(--blue);
+}
+
+.home-container.landscape .green,
+.green {
+   color: #16a085;
+}
+
+.home-container.landscape .midnight,
+.midnight {
+   color: #2c3e50;
+}
+
+/* headshot ====================================== */
+
+.home-container.landscape .headshot-image,
+.headshot-image {
+   -webkit-transform-origin: center;
+   transform-origin        : center;
+   position                : absolute;
+   width                   : calc(0* var(--fontSize));
+   -webkit-transform       : scale(1) translate(0, -25%);
+   transform               : scale(1) translate(0, -25%);
+   -webkit-transition      : all 100ms ease-in-out;
+   transition              : all 100ms ease-in-out;
+}
+
+.home-container.landscape .headshot-image.image-active,
+.headshot-image.image-active {
+   width             : calc(11 * var(--fontSize)) !important;
+   -webkit-transition: all 600ms 5s ease-in-out;
+   transition        : all 600ms 5s ease-in-out;
+}
+
+/* portrait =======================================*/
+
+@media (orientation: portrait) {
+
+   .home-container.portrait .headshot-image {
+      -webkit-transform: scale(0.8) translate(0, -45%);
+      transform        : scale(0.8) translate(0, -45%);
+   }
+
+   .home-container.portrait .rotating-text {
+      -webkit-transform : translate(-25%, 4%) scale(0);
+      transform         : translate(-25%, 4%) scale(0);
+      -webkit-transition: all 100ms ease-in-out;
+      transition        : all 100ms ease-in-out;
+   }
+
+   .home-container.portrait .rotating-text.rotating-active {
+      -webkit-transform : translate(-25%, 4%) scale(1);
+      transform         : translate(-25%, 4%) scale(1);
+      -webkit-transition: all 600ms 5.4s ease-in-out;
+      transition        : all 600ms 5.4s ease-in-out;
+   }
+
+   .home-container.portrait svg.intro.go .text.text-four,
+   .home-container.portrait svg.intro.go .text-stroke.text-stroke-four {
+      -webkit-transform-origin: top;
+      transform-origin        : top;
+      -webkit-transform       : scale(1.5) translate(50%, 42%);
+      transform               : scale(1.5) translate(50%, 42%);
+   }
+
+
+   .home-container.portrait svg.intro.go .text.text-five,
+   .home-container.portrait svg.intro.go .text-stroke.text-stroke-five {
+      -webkit-transform-origin: top;
+      transform-origin        : top;
+      -webkit-transform       : scale(1.45) translate(50%, 46%);
+      transform               : scale(1.45) translate(50%, 46%);
+   }
+
+   .home-container.portrait svg.intro.go .text.text-six,
+   .home-container.portrait svg.intro.go .text-stroke.text-stroke-six {
+      -webkit-transform-origin: top;
+      transform-origin        : top;
+      -webkit-transform       : scale(1.4) translate(50%, 53%);
+      transform               : scale(1.4) translate(50%, 53%);
+   }
+
+
+   .home-container.portrait svg.intro.go .text.text-seven,
+   .home-container.portrait svg.intro.go .text-stroke.text-stroke-seven {
+      -webkit-transform-origin: top;
+      transform-origin        : top;
+      -webkit-transform       : scale(1.25) translate(50%, 62%);
+      transform               : scale(1.25) translate(50%, 62%);
+   }
+
+   .home-container.portrait svg.intro.go .text.text-eight,
+   .home-container.portrait svg.intro.go .text-stroke.text-stroke-eight {
+      -webkit-transform-origin: top;
+      transform-origin        : top;
+      -webkit-transform       : scale(1.5) translate(50%, 57%);
+      transform               : scale(1.5) translate(50%, 57%);
+   }
+}

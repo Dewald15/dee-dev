@@ -1,0 +1,9 @@
+export { ShellComponent } from './shell/shell.component';
+export { LandingComponent } from './landing/landing.component';
+export { VideoOverlayComponent } from './video-overlay/video-overlay.component';
+export { ListItemsComponent } from './list-items/list-items.component';
+export { HomeComponent } from './home/home.component';
+export { AboutComponent } from './about/about.component';
+export { SkillsComponent } from './skills/skills.component';
+export { CodeComponent } from './code/code.component';
+export { ContactComponent } from './contact/contact.component';

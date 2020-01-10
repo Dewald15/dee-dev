@@ -1,0 +1,437 @@
+.toolbar,
+.toolbar.landscape {
+  position             : relative;
+  display              : -webkit-box;
+  display              : -ms-flexbox;
+  display              : flex;
+  -webkit-box-orient   : vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction   : column;
+  flex-direction       : column;
+  -ms-flex-wrap        : nowrap;
+  flex-wrap            : nowrap;
+  -ms-flex-pack        : distribute;
+  justify-content      : space-around;
+  -webkit-box-align    : center;
+  -ms-flex-align       : center;
+  align-items          : center;
+  -ms-flex-line-pack   : center;
+  align-content        : center;
+  height               : 100%;
+  width                : 100%;
+  -webkit-transition   : all 400ms cubic-bezier(0.415, 0.145, 0.065, 0.915) !important;
+  transition           : all 400ms cubic-bezier(0.415, 0.145, 0.065, 0.915) !important;
+}
+
+.toolbar.large,
+.toolbar.landscape.large {
+  margin-left       : 0;
+  -webkit-transition: all 400ms cubic-bezier(0.415, 0.145, 0.065, 0.915) !important;
+  transition        : all 400ms cubic-bezier(0.415, 0.145, 0.065, 0.915) !important;
+}
+
+.toolbar.landscape.small,
+.toolbar.small {
+  margin-left       : 65%;
+  -webkit-transition: all 600ms 150ms cubic-bezier(0.415, 0.145, 0.065, 0.915) !important;
+  transition        : all 600ms 150ms cubic-bezier(0.415, 0.145, 0.065, 0.915) !important;
+}
+
+.toolbar.landscape .menu-item,
+.menu-item {
+  position             : relative;
+  display              : -webkit-box;
+  display              : -ms-flexbox;
+  display              : flex;
+  -ms-flex-wrap        : nowrap;
+  flex-wrap            : nowrap;
+  -webkit-box-orient   : horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow        : row;
+  flex-flow            : row;
+  -webkit-box-align    : center;
+  -ms-flex-align       : center;
+  align-items          : center;
+  -ms-flex-line-pack   : center;
+  align-content        : center;
+  -webkit-box-pack     : justify;
+  -ms-flex-pack        : justify;
+  justify-content      : space-between;
+  -ms-flex-item-align  : end;
+  align-self           : flex-end;
+  width                : 18vw;
+  height               : 20%;
+  background-color     : var(--opacity-black);
+  cursor               : pointer;
+  border-radius        : 4px;
+  border-top           : 0.5px solid #090909;
+  border-left          : 0.5px solid #090909;
+  border-right         : 0.5px solid #090909;
+  padding              : 2vw 0 2vw 0;
+  -webkit-box-shadow   : inset 0 0 2px 0.1px #45454555;
+  box-shadow           : inset 0 0 2px 0.1px #45454555;
+  -webkit-transition   : all ease-in-out 500ms;
+  transition           : all ease-in-out 500ms;
+}
+
+.menu-item:last-of-type,
+.toolbar.landscape .menu-item:last-of-type {
+  border-bottom: 0.5px solid #090909;
+}
+
+.toolbar.landscape .menu-item.hovering,
+.toolbar.landscape .menu-item.active,
+.menu-item.hovering,
+.menu-item.active {
+  background-color  : #222222bb;
+  -webkit-box-shadow: inset 0 0 0.3px 0.15px #222222;
+  box-shadow        : inset 0 0 0.3px 0.15px #222222;
+  -webkit-transition: all ease-in-out 200ms;
+  transition        : all ease-in-out 200ms;
+}
+
+.toolbar.landscape .icon-container,
+.icon-container {
+  position          : relative;
+  display           : -webkit-box;
+  display           : -ms-flexbox;
+  display           : flex;
+  -webkit-box-align : center;
+  -ms-flex-align    : center;
+  align-items       : center;
+  -webkit-box-pack  : center;
+  -ms-flex-pack     : center;
+  justify-content   : center;
+  width             : calc(4 * var(--fontSize));
+  height            : calc(4 * var(--fontSize));
+  border-radius     : 50%;
+  -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0);
+  box-shadow        : 0 0 0 2px rgba(255, 255, 255, 0);
+  background        : rgba(255, 255, 255, 0);
+  overflow          : hidden;
+  left              : 6%;
+  -webkit-transition: background 0.3s,
+    -webkit-box-shadow 0.3s;
+  transition: background 0.3s,
+    -webkit-box-shadow 0.3s;
+  transition: background 0.3s,
+    box-shadow 0.3s;
+  transition: background 0.3s,
+    box-shadow 0.3s,
+    -webkit-box-shadow 0.3s;
+}
+
+.toolbar.landscape .icon-container::after,
+.icon-container::after {
+  content           : '';
+  position          : absolute;
+  width             : calc(4 * var(--fontSize));
+  height            : calc(4 * var(--fontSize));
+  overflow          : visible;
+  border-radius     : 50%;
+  opacity           : 0;
+  pointer-events    : none;
+  margin            : 0;
+  -webkit-box-shadow: inset 0 0 0 35px rgba(255, 255, 255, 0);
+  box-shadow        : inset 0 0 0 35px rgba(255, 255, 255, 0);
+}
+
+.toolbar.landscape .clicked .icon-container::after,
+.clicked .icon-container::after {
+  -webkit-animation: anim-effect-radomir 0.5s ease-out forwards;
+  animation        : anim-effect-radomir 0.5s ease-out forwards;
+}
+
+.toolbar.landscape .hovering .icon-container,
+.hovering .icon-container {
+  background        : rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0 0 0 5px rgba(184, 184, 184, 0.3);
+  box-shadow        : 0 0 0 5px rgba(184, 184, 184, 0.3);
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition        : -webkit-box-shadow 0.5s;
+  transition        : box-shadow 0.5s;
+  transition        : box-shadow 0.5s, -webkit-box-shadow 0.5s;
+}
+
+.toolbar.landscape .menu-icon,
+.toolbar.landscape .menu-icon-two,
+.menu-icon,
+.menu-icon-two {
+  position          : absolute;
+  display           : -webkit-box;
+  display           : -ms-flexbox;
+  display           : flex;
+  -webkit-box-align : center;
+  -ms-flex-align    : center;
+  align-items       : center;
+  -webkit-box-pack  : center;
+  -ms-flex-pack     : center;
+  justify-content   : center;
+  width             : calc(3.2 * var(--fontSize));
+  height            : calc(3.2 * var(--fontSize));
+  -webkit-transition: background 0.3s, -webkit-box-shadow 0.3s;
+  transition        : background 0.3s, -webkit-box-shadow 0.3s;
+  transition        : background 0.3s, box-shadow 0.3s;
+  transition        : background 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+
+.toolbar.landscape .home-image,
+.toolbar.landscape .home-image-two,
+.home-image,
+.home-image-two {
+  width         : calc(2.7 * var(--fontSize));
+  height        : calc(2.7 * var(--fontSize));
+  padding-bottom: 10%;
+}
+
+.toolbar.landscape .contact-image,
+.toolbar.landscape .contact-image-two,
+.contact-image,
+.contact-image-two {
+  width : calc(4.5 * var(--fontSize));
+  height: calc(4.5 * var(--fontSize));
+}
+
+.toolbar.landscape .menu-icon-two,
+.menu-icon-two {
+  opacity           : 0;
+  -webkit-transition: all ease-in-out 50ms;
+  transition        : all ease-in-out 50ms;
+}
+
+.toolbar.landscape .hovering .menu-icon-two,
+.hovering .menu-icon-two {
+  -webkit-animation : toBottomFromTop 0.3s forwards;
+  animation         : toBottomFromTop 0.3s forwards;
+  opacity           : 1;
+  -webkit-transition: all ease-in-out 400ms;
+  transition        : all ease-in-out 400ms;
+}
+
+.toolbar.landscape .icon-container::after,
+.toolbar.landscape .home-image,
+.toolbar.landscape .home-image-two,
+.toolbar.landscape .about-image,
+.toolbar.landscape .about-image-two,
+.toolbar.landscape .skills-image,
+.toolbar.landscape .skills-image-two,
+.toolbar.landscape .showcase-image,
+.toolbar.landscape .showcase-image-two,
+.toolbar.landscape .contact-image,
+.toolbar.landscape .contact-image-two,
+.icon-container::after,
+.home-image,
+.home-image-two,
+.about-image,
+.about-image-two,
+.skills-image,
+.skills-image-two,
+.showcase-image,
+.showcase-image-two,
+.contact-image,
+.contact-image-two {
+  /* width        : calc(4.5 * var(--fontSize));
+    height        : calc(4.5 * var(--fontSize)); */
+  margin-left     : 0;
+}
+
+/* icon-text ========================================*/
+
+.toolbar.landscape .icon-text,
+.icon-text {
+  position          : relative;
+  display           : -webkit-box;
+  display           : -ms-flexbox;
+  display           : flex;
+  width             : 65%;
+  outline           : none;
+  text-decoration   : none;
+  -webkit-box-pack  : center;
+  -ms-flex-pack     : center;
+  justify-content   : center;
+  text-align        : center;
+  -webkit-box-align : center;
+  -ms-flex-align    : center;
+  align-items       : center;
+  color             : rgb(200, 200, 200);
+  text-shadow       : 0 0 1px rgba(111, 134, 134, 0.3);
+  font-size         : 1.15em;
+  padding-right     : 8%;
+  -webkit-transition: all 400ms cubic-bezier(0.415, 0.145, 0.065, 0.915) !important;
+  transition        : all 400ms cubic-bezier(0.415, 0.145, 0.065, 0.915) !important;
+}
+
+.toolbar.landscape .large .icon-text,
+.large .icon-text {
+  -webkit-transform : translateX(0);
+  transform         : translateX(0);
+  -webkit-transition: all 600ms cubic-bezier(0.415, 0.145, 0.065, 0.915) !important;
+  transition        : all 600ms cubic-bezier(0.415, 0.145, 0.065, 0.915) !important;
+}
+
+.toolbar.landscape .small .icon-text,
+.small .icon-text {
+  -webkit-transform : translateX(100%);
+  transform         : translateX(100%);
+  -webkit-transition: all 600ms 50ms cubic-bezier(0.415, 0.145, 0.065, 0.915) !important;
+  transition        : all 600ms 50ms cubic-bezier(0.415, 0.145, 0.065, 0.915) !important;
+}
+
+.toolbar.landscape .icon-text::before,
+.icon-text::before {
+  color             : #fff;
+  content           : attr(data-hover);
+  position          : absolute;
+  opacity           : 0;
+  text-shadow       : 0 0 1px rgba(255, 255, 255, 0.3);
+  -webkit-transform : scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+  transform         : scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition        : opacity 0.3s, -webkit-transform 0.3s;
+  transition        : transform 0.3s, opacity 0.3s;
+  transition        : transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  pointer-events    : none;
+}
+
+.toolbar.landscape .hovering .icon-text::before,
+.hovering .icon-text::before {
+  -webkit-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+  transform        : scale(1) translateX(0px) translateY(0px) rotate(0deg);
+  opacity          : 1;
+}
+
+/* animations====================================== */
+
+@-webkit-keyframes toBottomFromTop {
+  49% {
+    -webkit-transform: translateY(100%);
+    transform        : translateY(100%);
+  }
+
+  50% {
+    opacity          : 0;
+    -webkit-transform: translateY(-100%);
+    transform        : translateY(-100%);
+  }
+
+  51% {
+    opacity: 1;
+  }
+}
+
+@keyframes toBottomFromTop {
+  49% {
+    -webkit-transform: translateY(100%);
+    transform        : translateY(100%);
+  }
+
+  50% {
+    opacity          : 0;
+    -webkit-transform: translateY(-100%);
+    transform        : translateY(-100%);
+  }
+
+  51% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes anim-effect-radomir {
+  0% {
+    opacity          : 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform        : scale3d(1, 1, 1);
+  }
+
+  80% {
+    -webkit-box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.8);
+    box-shadow        : inset 0 0 0 2px rgba(255, 255, 255, 0.8);
+    opacity           : 0.1;
+  }
+
+  100% {
+    -webkit-box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.8);
+    box-shadow        : inset 0 0 0 2px rgba(255, 255, 255, 0.8);
+    opacity           : 0;
+    -webkit-transform : scale3d(2, 2, 1);
+    transform         : scale3d(2, 2, 1);
+  }
+}
+
+@keyframes anim-effect-radomir {
+  0% {
+    opacity          : 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform        : scale3d(1, 1, 1);
+  }
+
+  80% {
+    -webkit-box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.8);
+    box-shadow        : inset 0 0 0 2px rgba(255, 255, 255, 0.8);
+    opacity           : 0.1;
+  }
+
+  100% {
+    -webkit-box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.8);
+    box-shadow        : inset 0 0 0 2px rgba(255, 255, 255, 0.8);
+    opacity           : 0;
+    -webkit-transform : scale3d(2, 2, 1);
+    transform         : scale3d(2, 2, 1);
+  }
+}
+
+/* portrait =======================================*/
+
+@media (orientation: portrait) {
+  .toolbar.portrait {
+    -webkit-box-orient   : horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction   : row;
+    flex-direction       : row;
+    height               : -webkit-min-content;
+    height               : -moz-min-content;
+    height               : min-content;
+  }
+
+  .toolbar.portrait.small {
+    margin-left       : 0;
+    -webkit-transition: all 600ms 150ms cubic-bezier(0.415, 0.145, 0.065, 0.915) !important;
+    transition        : all 600ms 150ms cubic-bezier(0.415, 0.145, 0.065, 0.915) !important;
+  }
+
+  .toolbar.portrait .menu-item {
+    width : 20%;
+    height: 9%;
+  }
+
+  .toolbar.portrait .icon-text {
+    display: none;
+  }
+
+  .toolbar.portrait .icon-container::after,
+  .toolbar.portrait .home-image,
+  .toolbar.portrait .home-image-two,
+  .toolbar.portrait .about-image,
+  .toolbar.portrait .about-image-two,
+  .toolbar.portrait .skills-image,
+  .toolbar.portrait .skills-image-two,
+  .toolbar.portrait .showcase-image,
+  .toolbar.portrait .showcase-image-two,
+  .toolbar.portrait .contact-image,
+  .toolbar.portrait .contact-image-two {
+    /* width      : calc(4.5 * var(--fontSize));
+    height        : calc(4.5 * var(--fontSize)); */
+    margin-left   : calc(0.4 * var(--fontSize)) !important;
+  }
+
+  .toolbar.portrait .hovering .icon-container {
+    background        : inherit;
+    -webkit-box-shadow: 0 0 0 5px rgba(184, 184, 184, 0.3);
+    box-shadow        : 0 0 0 5px rgba(184, 184, 184, 0.3);
+    -webkit-transition: -webkit-box-shadow 0.5s;
+    transition        : -webkit-box-shadow 0.5s;
+    transition        : box-shadow 0.5s;
+    transition        : box-shadow 0.5s, -webkit-box-shadow 0.5s;
+  }
+}

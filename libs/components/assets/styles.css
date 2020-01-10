@@ -1,0 +1,375 @@
+:root {
+    /* user-select       : text; */
+    scroll-behavior      : smooth !important;
+    display              : -webkit-box;
+    display              : -ms-flexbox;
+    display              : flex;
+    -webkit-box-orient   : vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction   : column;
+    flex-direction       : column;
+    /* colors */
+    --textColor    : #666666;
+    --white        : rgb(255, 255, 255);
+    --opacity-black: #161616bb;
+    --black        : #101010;
+    --front-black  : #202020;
+    --middle-black : #181818;
+    --back-black   : #161616;
+    --line-black   : #303030;
+    --dark-grey    : #030303;
+    --light-grey   : #494949;
+    /* gradients ========================================== */
+    --black-deepBlue: radial-gradient(#001a2e, #186278 160%);
+    /* purple */
+    --dark-purple   : #301870;
+    --purple        : #5808D0;
+    --light-purple  : #8000ff;
+    --lighter-purple: rgb(119, 65, 212);
+    /* indigo */
+    --indigo     : #3500D3;
+    --dark-indigo: #240090;
+    /* blue */
+    --light-blue  : #62c0ff;
+    --lighter-blue: #46b5ff;
+    --blue        : #0099ff;
+    --darker-blue : #1f6ca0;
+    --dark-blue   : #003a55;
+    --deep-blue   : #001a2e;
+    --meta-blue   : #07425a;
+    /* green */
+    --green     : rgb(162, 246, 44);
+    --dark-green: #61892F;
+    /* magenta */
+    --magenta: rgb(255, 0, 64);
+    /* text styling */
+    --bottonHoverShadowInsetCenter: inset 0 0 6px 0.5px rgba(1, 1, 1, 0.1);
+    --bottonHoverShadow           : 0 15px 10px -10px rgba(31, 31, 31, 0.5);
+    --bottonHoverShadowLight      : 0 0 8px 1.5px rgba(0, 0, 0, 0.15);
+    --flatShadowTop               : 0px -5px 5px -5px #999;
+    --flatShadowRight             : 5px 0 5px -5px #999;
+    --flatShadowBottom            : 0px 5px 5px -5px #999;
+    --flatShadowLeft              : -5px 0 5px -5px #999;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing        : border-box;
+    image-rendering   : auto !important;
+}
+
+::selection {
+    color     : var(--light-black);
+    background: #fff;
+}
+
+::-moz-selection {
+    color     : var(--light-black);
+    background: #fff;
+}
+
+html {
+    scroll-behavior           : smooth !important;
+    /* overflow               : hidden; */
+    text-rendering            : optimizeLegibility;
+    -webkit-font-smoothing    : antialiased;
+    -moz-osx-font-smoothing   : grayscale;
+    /* font-family            : Futura, Trebuchet MS, Arial, sans-serif; */
+    /* font-family            : anodina-regular; */
+    font-family               : 'Varela Round', sans-serif;
+    /* animation properties */
+    transition: all ease-in-out 150ms;
+    /* chrome properties */
+    -webkit-locale        : 'en';
+    -webkit-font-smoothing: antialiased;
+    -webkit-transition    : all ease-in-out 150ms;
+    /* firefox properties */
+    -moz-font-smoothing: antialiased;
+    -moz-transition    : all ease-in-out 150ms;
+    overflow           : hidden;
+}
+
+
+/* html::-webkit-scrollbar {
+    width : 0.5rem;
+    height: 0.8rem;
+}
+
+html::-webkit-scrollbar-thumb {
+    background        : -webkit-gradient(linear, left top, left bottom, from(var(--darkPurple)), to(var(--lightPurple)));
+    background        : linear-gradient(to bottom, var(--darkPurple), var(--lightPurple));
+    border-radius     : 5px 0 0 5px;
+    -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+    box-shadow        : inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+} */
+
+body {
+    --variable-small       : 0.35;
+    --variable-big         : 1;
+    --fontSize             : 16px;
+    font-size              : var(--fontSize);
+    --textShadowLight      : -0.5px 0 0.5px rgba(85, 85, 85, 0.181), -0.5px 0 0.5px rgba(85, 85, 85, 0.181), 0 0.5px 0.5px rgba(85, 85, 85, 0.181);
+    --textShadowIndent     : -0.35px 0 0.35px rgba(44, 44, 44, 0.4), 0.35px 0 0.35px rgba(44, 44, 44, 0.4), 0 0.35px 0.35px rgba(44, 44, 44, 0.4);
+    --boxShadowIndent      : 0 0 0 0.5px rgba(33, 33, 33, 0.4), 0 0 0 -0.5px rgba(33, 33, 33, 0.4);
+    /* text-shadow         : var(--textShadowIndent); */
+    /* --deviceScreenHeight: 0px;
+    --deviceScreenWidth    : 0px; */
+    color                  : var(--textColor);
+    margin                 : 0 !important;
+    overflow               : hidden;
+}
+
+
+/***************** global styles ******************/
+
+.particles-background {
+    image-rendering  : auto !important;
+    position         : absolute;
+    display          : -webkit-box;
+    display          : -ms-flexbox;
+    display          : flex;
+    overflow         : hidden;
+    left             : 0;
+    right            : 0;
+    -webkit-transform: translate(-2%, -45%) rotate(12.5deg);
+    transform        : translate(-2%, -45%) rotate(12.5deg);
+    width            : 100%;
+    max-width        : var(--deviceScreenWidth);
+    z-index          : 0 !important;
+}
+
+.purple-text {
+    color      : var(--purple);
+    text-shadow: -0.25px 0 0.35px rgba(33, 33, 33, 0.25), 0.25px 0 0.35px rgba(33, 33, 33, 0.25), 0 0.25px 0.35px rgba(33, 33, 33, 0.25);
+}
+
+
+/***************** shared global styles ******************/
+
+.image {
+    image-rendering            : auto !important;
+    -webkit-backface-visibility: hidden !important;
+    backface-visibility        : hidden !important;
+    height                     : auto !important;
+}
+
+.image-white {
+    -webkit-filter: brightness(0) saturate(100%) invert(98%) sepia(0%) saturate(3913%) hue-rotate(196deg) brightness(120%) contrast(96%) !important;
+    filter        : brightness(0) saturate(100%) invert(98%) sepia(0%) saturate(3913%) hue-rotate(196deg) brightness(120%) contrast(96%) !important;
+}
+
+.image-light-black {
+    -webkit-filter: brightness(0) saturate(100%) invert(0%) sepia(8%) saturate(2050%) hue-rotate(329deg) brightness(98%) contrast(80%) !important;
+    filter        : brightness(0) saturate(100%) invert(0%) sepia(8%) saturate(2050%) hue-rotate(329deg) brightness(98%) contrast(80%) !important;
+}
+
+.image-black {
+    -webkit-filter: brightness(0) saturate(100%) invert(0%) sepia(23%) saturate(7122%) hue-rotate(10deg) brightness(69%) contrast(87%) !important;
+    filter        : brightness(0) saturate(100%) invert(0%) sepia(23%) saturate(7122%) hue-rotate(10deg) brightness(69%) contrast(87%) !important;
+}
+
+.image-dark-grey {
+    -webkit-filter: brightness(0) saturate(100%) invert(10%) sepia(12%) saturate(6%) hue-rotate(314deg) brightness(93%) contrast(85%) !important;
+    filter        : brightness(0) saturate(100%) invert(10%) sepia(12%) saturate(6%) hue-rotate(314deg) brightness(93%) contrast(85%) !important;
+}
+
+.image-light-grey {
+    -webkit-filter: brightness(0) saturate(100%) invert(27%) sepia(0%) saturate(81%) hue-rotate(161deg) brightness(96%) contrast(87%) !important;
+    filter        : brightness(0) saturate(100%) invert(27%) sepia(0%) saturate(81%) hue-rotate(161deg) brightness(96%) contrast(87%) !important;
+}
+
+
+/* purple */
+
+.image-purple {
+    -webkit-filter: brightness(0) saturate(100%) invert(10%) sepia(53%) saturate(7331%) hue-rotate(258deg) brightness(62%) contrast(117%) !important;
+    filter        : brightness(0) saturate(100%) invert(10%) sepia(53%) saturate(7331%) hue-rotate(258deg) brightness(62%) contrast(117%) !important;
+}
+
+.image-dark-purple {
+    -webkit-filter: brightness(0) saturate(100%) invert(10%) sepia(34%) saturate(3518%) hue-rotate(240deg) brightness(83%) contrast(121%) !important;
+    filter        : brightness(0) saturate(100%) invert(10%) sepia(34%) saturate(3518%) hue-rotate(240deg) brightness(83%) contrast(121%) !important;
+}
+
+
+/* indigo */
+
+.image-indigo {
+    -webkit-filter: brightness(0) saturate(100%) invert(15%) sepia(97%) saturate(5556%) hue-rotate(258deg) brightness(74%) contrast(136%) !important;
+    filter        : brightness(0) saturate(100%) invert(15%) sepia(97%) saturate(5556%) hue-rotate(258deg) brightness(74%) contrast(136%) !important;
+}
+
+.image-dark-indigo {
+    -webkit-filter: brightness(0) saturate(100%) invert(9%) sepia(64%) saturate(7093%) hue-rotate(260deg) brightness(79%) contrast(127%) !important;
+    filter        : brightness(0) saturate(100%) invert(9%) sepia(64%) saturate(7093%) hue-rotate(260deg) brightness(79%) contrast(127%) !important;
+}
+
+
+/* blue */
+
+.image-blue {
+    -webkit-filter: brightness(0) saturate(100%) invert(55%) sepia(26%) saturate(1457%) hue-rotate(163deg) brightness(90%) contrast(91%) !important;
+    filter        : brightness(0) saturate(100%) invert(55%) sepia(26%) saturate(1457%) hue-rotate(163deg) brightness(90%) contrast(91%) !important;
+}
+
+.image-dark-blue {
+    -webkit-filter: brightness(0) saturate(100%) invert(29%) sepia(62%) saturate(1423%) hue-rotate(177deg) brightness(94%) contrast(79%) !important;
+    filter        : brightness(0) saturate(100%) invert(29%) sepia(62%) saturate(1423%) hue-rotate(177deg) brightness(94%) contrast(79%) !important;
+}
+
+.image-deep-blue {
+    -webkit-filter: brightness(0) saturate(100%) invert(9%) sepia(66%) saturate(1239%) hue-rotate(175deg) brightness(89%) contrast(104%) !important;
+    filter        : brightness(0) saturate(100%) invert(9%) sepia(66%) saturate(1239%) hue-rotate(175deg) brightness(89%) contrast(104%) !important;
+}
+
+
+/* green */
+
+.image-green {
+    -webkit-filter: brightness(0) saturate(100%) invert(62%) sepia(62%) saturate(455%) hue-rotate(43deg) brightness(96%) contrast(94%) !important;
+    filter        : brightness(0) saturate(100%) invert(62%) sepia(62%) saturate(455%) hue-rotate(43deg) brightness(96%) contrast(94%) !important;
+}
+
+.image-dark-green {
+    -webkit-filter: brightness(0) saturate(100%) invert(52%) sepia(12%) saturate(2300%) hue-rotate(44deg) brightness(88%) contrast(79%) !important;
+    filter        : brightness(0) saturate(100%) invert(52%) sepia(12%) saturate(2300%) hue-rotate(44deg) brightness(88%) contrast(79%) !important;
+}
+
+
+/***************** shared global animations ******************/
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 #ffffff;
+        box-shadow        : 0 0 0 0 #ffffff;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 #ffffff;
+        box-shadow        : 0 0 0 0 #ffffff;
+    }
+}
+
+@-webkit-keyframes pulsePurple {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgb(122, 0, 244);
+        box-shadow        : 0 0 0 0 rgb(122, 0, 244);
+    }
+}
+
+@keyframes pulsePurple {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgb(122, 0, 244);
+        box-shadow        : 0 0 0 0 rgb(122, 0, 244);
+    }
+}
+
+@-webkit-keyframes pulseGrey {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(173, 173, 173, 0.4);
+        box-shadow        : 0 0 0 0 rgba(173, 173, 173, 0.4);
+    }
+}
+
+@keyframes pulseGrey {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(173, 173, 173, 0.4);
+        box-shadow        : 0 0 0 0 rgba(173, 173, 173, 0.4);
+    }
+}
+
+@media (max-width: 899px) {
+
+    .wrap-default-p,
+    .wrap-reverse-p {
+        font-size: calc(1.6 * var(--fontSize));
+    }
+}
+
+
+/**** notes
+on dee-lap: 1366 x 768
+calc(0.9 * var(--fontSize)) = 1vw = 14.4px
+calc(0.48 * var(--fontSize)) = 1vh = 7.68px
+
+--- transitions:
+
+    transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+
+
+    {
+        const simpleObservable = new Observable((observer) => {
+
+            // observable execution
+            observer.next("bla bla bla")
+            observer.complete()
+        })
+
+        // subscribe to the observable
+        simpleObservable.subscribe()
+
+        // dispose the observable
+        simpleObservable.unsubscribe()
+    }
+
+    {
+        unit-sizes() {
+            >   Unit conversion                                      : 1⁢in=2.54⁢cm=96⁢px=72⁢pt
+            >   CSS has relative and absolute lengths. In normal zoom: 1⁢em=16⁢px
+    }
+
+    {
+        Ordering of properties() {
+            - Layout Properties (position, float, clear, display)
+            - Box Model Properties (width, height, margin, padding)
+            - Visual Properties (color, background, border, box-shadow)
+            - Typography Properties (font-size, font-family, text-align, text-transform)
+            - Misc Properties (cursor, overflow, z-index)
+    }
+
+    {
+        > Flexbox - https: //css-tricks.com/snippets/css/a-guide-to-flexbox/
+            - Parent Properties (flex container)
+                - display
+                - flex-direction
+                    -   This establishes the main-axis, thus defining the direction flex items are placed in the flex container
+                - flex-wrap
+                    -   By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.
+                - flex-flow
+                    -   This is a shorthand flex-direction and flex-wrap properties, which together define the flex container's main and cross axes. Default is row nowrap
+                - justify-content
+                    -   This defines the alignment along the main axis. It helps distribute extra free space left over when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size.
+                - align-items
+                    -   This defines the default behavior for how flex items are laid out along the cross axis on the current line. Think of it as the justify-content version for the cross-axis (perpendicular to the main-axis).
+                - align-content
+                    -   This aligns a flex container's lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis.
+
+            - Children Properties (flex items)
+                - order
+                - flex-grow
+                - flex-shrink
+                - flex-basis
+                    -   This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means "look at my width or height property" (which was temporarily done by the main-size keyword until deprecated). The content keyword means "size it based on the item's content" - this keyword isn't well supported yet, so it's hard to test and harder to know what its brethren max-content, min-content, and fit-content do.
+                - flex
+                    -   This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto
+                - align-self
+                    - allows the default alignment (or the one specified by align-items) to be overridden for individual flex items.
+    }
+
+    {
+        > background-image config
+            border-image         : linear-gradient(to bottom, rgba(71, 215, 255, 1), rgba(98, 0, 234, 1) 20%, rgba(98, 0, 234, 1)90%, rgba(71, 215, 255, 1)) 1;
+            background-image     : url('../../../../../assets/images/bg.png');
+            background           : white;
+            background-size      : 100% 130%;
+            background-attachment: fixed;
+            background-position  : top;
+            background-repeat    : no-repeat;
+    }
+*/

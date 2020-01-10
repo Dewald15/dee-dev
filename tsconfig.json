@@ -1,0 +1,21 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "sourceMap": true,
+        "declaration": false,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "target": "es5",
+        "typeRoots": ["node_modules/@types"],
+        "lib": ["es2017", "dom"],
+        "baseUrl": ".",
+        "paths": {
+            "@dee-dev/*": ["libs/*"],
+            "@dee-dev/core/main": ["libs/core/main/src/index.ts"],
+            "@dee-dev/core/router": ["libs/core/router/src/index.ts"],
+            "@dee-dev/components/ui": ["libs/components/ui/src/index.ts"]
+        }
+    },
+    "exclude": ["wallabyTest.ts", "node_modules", "tmp"]
+}

@@ -1,0 +1,102 @@
+.section-shell {
+    position             : relative;
+    -webkit-box-sizing   : border-box;
+    box-sizing           : border-box;
+    display              : -webkit-box;
+    display              : -ms-flexbox;
+    display              : flex;
+    -webkit-box-orient   : horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow        : row;
+    flex-flow            : row;
+    top                  : 0;
+    left                 : 0;
+    width                : inherit;
+    height               : inherit;
+    color                : rgb(255, 255, 255, 0.8);
+    background-color     : var(--back-black);
+    /*background-image   : var(--black-deepBlue);*/
+    z-index              : 0;
+    overflow             : hidden;
+    transition           : all ease-in-out 2s;
+    -webkit-transition   : all ease-in-out 2s;
+    -moz-transition      : all ease-in-out 2s;
+    -ms-transition       : all ease-in-out 2s;
+    -o-transition        : all ease-in-out 2s;
+}
+
+.page {
+    position: absolute;
+    display : -webkit-box;
+    display : -ms-flexbox;
+    display : flex;
+    width   : 95vw;
+    height  : inherit;
+    z-index : 0;
+    opacity : 0;
+    overflow: hidden;
+}
+
+.home-page-active .home-page {
+    /* display: flex; */
+    z-index   : 10;
+    opacity   : 1;
+}
+
+.about-page-active .about-page {
+    /* display: flex; */
+    z-index   : 10;
+    opacity   : 1;
+}
+
+.skills-page-active .skills-page {
+    /* display: flex; */
+    z-index   : 10;
+    opacity   : 1;
+}
+
+.code-page-active .code-page {
+    /* display: flex; */
+    z-index   : 10;
+    opacity   : 1;
+}
+
+.contact-page-active .contact-page {
+    /* display: flex; */
+    z-index   : 10;
+    opacity   : 1;
+}
+
+.list-item {
+    position         : absolute;
+    display          : -webkit-box;
+    display          : -ms-flexbox;
+    display          : flex;
+    -webkit-box-align: unset;
+    -ms-flex-align   : unset;
+    align-items      : unset;
+    right            : 0;
+    bottom           : unset;
+    width            : 18vw;
+    height           : unset;
+    z-index          : 10;
+}
+
+/* portrait =======================================*/
+
+@media (orientation: portrait) {
+    .portrait .list-item {
+        bottom           : 0;
+        width            : 100%;
+        height           : -webkit-min-content !important;
+        height           : -moz-min-content !important;
+        height           : min-content !important;
+        -webkit-box-align: end;
+        -ms-flex-align   : end;
+        align-items      : flex-end;
+    }
+
+    .portrait>.page {
+        width: 100%;
+    }
+}

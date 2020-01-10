@@ -1,0 +1,24 @@
+.container-global {
+    position             : absolute;
+    display              : -webkit-box;
+    display              : -ms-flexbox;
+    display              : flex;
+    -webkit-box-orient   : vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow        : column;
+    flex-flow            : column;
+    /* background-image  : var(--black-deepBlue); */
+    top                  : 0;
+    left                 : 0;
+    /* width             : inherit;
+    height               : inherit; */
+    font-weight          : 100;
+    overflow             : hidden;
+}
+
+.container-landing {
+    position: relative;
+    overflow: hidden;
+    width   : inherit;
+    height  : inherit;
+}

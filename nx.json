@@ -1,0 +1,27 @@
+{
+    "npmScope": "dee-dev",
+    "projects": {
+        "blueCircle": {
+            "tags": []
+        },
+        "blueCircle-e2e": {
+            "tags": []
+        },
+        "core-main": {
+            "tags": []
+        },
+        "core-router": {
+            "tags": []
+        },
+        "components-ui": {
+            "tags": []
+        }
+    },
+    "implicitDependencies": {
+        "angular.json": "*",
+        "package.json": "*",
+        "tsconfig.json": "*",
+        "tslint.json": "*",
+        "nx.json": "*"
+    }
+}

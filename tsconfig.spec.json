@@ -1,0 +1,21 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "outDir": "dist/out-tsc/apps/cxfi",
+        "types": [
+            "jasmine",
+            "node"
+        ]
+    },
+    "files": [
+        "./test.ts"
+    ],
+    "include": [
+        "./apps/blueCircle/blueCircle/src/typings.d.ts",
+        "./apps/**/*.spec.ts",
+        "./libs/**/*.spec.ts"
+    ],
+    "exclude": [
+        "./libs/components/assets/**/*.spec.ts",
+    ]
+}

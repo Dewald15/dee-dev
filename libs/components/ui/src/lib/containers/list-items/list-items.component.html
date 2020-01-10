@@ -1,0 +1,61 @@
+<div class="toolbar">
+    <div class="menu-item home active"
+    (click)='click(".home", 0)'
+    (mouseenter)='mouseenter(".home")'
+        (mouseleave)='mouseleave(".home")'>
+
+        <div class="icon-container home-icon-container">
+            <img *ngIf="homeImage" class="menu-icon home-image image image-white" [src]="homeImage" alt="home-image" />
+            <img *ngIf="homeImage" class="menu-icon-two home-image-two image image-light-grey" [src]="homeImage"
+                alt="home-image" />
+        </div>
+        <a class='icon-text' data-hover="Home">Home</a>
+    </div>
+    <div class="menu-item about"
+    (click)='click(".about", 1)'
+        (mouseenter)='mouseenter(".about")'
+        (mouseleave)='mouseleave(".about")'>
+        <div class="icon-container about-icon-container">
+            <img *ngIf="aboutImage" class="menu-icon about-image image image-white"
+            [src]="aboutImage" alt="about-image" />
+            <img *ngIf="aboutImage" class="menu-icon-two about-image-two image image-light-grey"
+            [src]="aboutImage" alt="about-image" />
+        </div>
+        <a class='icon-text' data-hover="About Me">About Me</a>
+    </div>
+    <div class="menu-item my-skills"
+        (click)='click(".my-skills", 2)'
+        (mouseenter)='mouseenter(".my-skills")'
+        (mouseleave)='mouseleave(".my-skills")'>
+        <div class="icon-container my-skills-icon-container">
+            <img *ngIf="skillsImage" class="menu-icon skills-image image image-white"
+            [src]="skillsImage" alt="skills-image" />
+            <img *ngIf="skillsImage" class="menu-icon-two skills-image-two image image-light-grey"
+            [src]="skillsImage" alt="skills-image" />
+        </div>
+        <a class='icon-text' data-hover="My Skills">My Skills</a>
+    </div>
+    <div class="menu-item  my-showcase"
+        (click)='click(".my-showcase", 3)'
+        (mouseenter)='mouseenter(".my-showcase")'
+        (mouseleave)='mouseleave(".my-showcase")'>
+        <div class="icon-container my-showcase-icon-container">
+            <img *ngIf="showcaseImage" class="menu-icon showcase-image image image-white"
+            [src]="showcaseImage" alt="showcase-image" />
+            <img *ngIf="showcaseImage" class="menu-icon-two showcase-image-two image image-light-grey"
+            [src]="showcaseImage" alt="showcase-image" />
+        </div>
+        <a class='icon-text' data-hover="Code Laboratory">Code Laboratory</a>
+    </div>
+    <div class="menu-item talk-to-me" (click)='click(".talk-to-me", 4)' (mouseenter)='mouseenter(".talk-to-me")'
+        (mouseleave)='mouseleave(".talk-to-me")'>
+
+        <div class="icon-container talk-to-me-icon-container">
+            <img *ngIf="contactImage" class="menu-icon contact-image image image-white" [src]="contactImage"
+                alt="contact-image" />
+            <img *ngIf="contactImage" class="menu-icon-two contact-image-two image image-light-grey" [src]="contactImage"
+                alt="contact-image" />
+        </div>
+        <a class='icon-text' data-hover="Talk To Me">Talk To Me</a>
+    </div>
+</div>

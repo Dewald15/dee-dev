@@ -1,0 +1,84 @@
+<section id="contact" class="toad-fullscreen">
+
+    <div class="main-container-contact">
+
+        <div class="contact-title">
+            Talk To Me
+        </div>
+
+        <div class="contact-content-container">
+
+            <div class="titles-container contact-form-title-main">
+
+                <div class="contact-form-title">
+                    Contact Form
+                </div>
+            </div>
+
+            <div class="page contact-container bio-container">
+
+                <img *ngIf="contactImage" class="menu-icon contact-image image image-black" [src]="contactImage"
+                    alt="contact-image" />
+                <article class="contact-list">
+
+                    <div id="contactForm" class="contactForm">
+
+                        <!-- <div id="formHeader" class="formHeader">
+                            <h1 id="message">Contact Me</h1>
+                        </div> -->
+
+                        <div id="formBody" class="formBody">
+                            <form action="https://script.google.com/macros/s/AKfycbzXXnwTVGQioVqTBiPqRTYhZDcU5CtcvvK50JKw/exec" method="POST" class='gform' name="contactForm">
+
+                                <div class="inputContainer">
+                                    <label for="userName">
+                                        <i class="fa fa-lg fa-fw fa-user"></i>
+                                    </label>
+                                    <input name="name" id="userName" type="text" placeholder="John Smith">
+                                </div>
+
+                                <div class="inputContainer">
+                                    <label for="userEmail">
+                                        <i class="fa fa-lg fa-fw fa-envelope"></i>
+                                    </label>
+                                    <input name="email" id="userEmail" type="email" placeholder="jsmith@domain.com">
+                                </div>
+
+                                <div class="inputContainer">
+                                    <textarea name="feedback" id="userMessage" rows="10" placeholder="Enter your message"></textarea>
+                                </div>
+
+                                <!-- <input id="submitBtn" class="submitBtn" type="submit" value="Send"> -->
+                                <div class="wrap">
+                                    <input  id="submitBtn" class="submitBtn" type="submit" value="Send">
+                                    <img src="https://www.dropbox.com/s/qfu4871umzhlcfo/check_arrow_2.svg?dl=1" alt="">
+                                    <svg class='circle-svg' width="50px" height="50px">
+                                        <circle class="circle_2" stroke-position="outside" stroke-width="3" fill="none" cx="25" cy="25" r="22">
+
+                                        </circle>
+                                    </svg>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+
+        <div class="contact-title contact-title-two">
+        </div>
+    </div>
+</section>
+<!--
+<section id="contact" class="toad-fullscreen">
+
+    <div class="page contact-container">
+
+        <div class="contact-title">
+            My contact
+        </div>
+
+
+    </div>
+</section> -->

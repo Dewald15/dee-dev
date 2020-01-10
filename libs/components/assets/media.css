@@ -1,0 +1,493 @@
+/* Landscape - min-width: 400 ========================================================================================================== */
+@media (orientation: landscape) and (min-width: 400px) and (max-width: 499px) and (min-height: 160px) and (max-height: 239px) {
+    body {
+        --fontSize: 4px !important;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 400px) and (max-width: 499px) and (min-height: 240px) and (max-height: 319px) {
+    body {
+        --fontSize: 5px !important;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 400px) and (max-width: 499px) and (min-height: 320px) and (max-height: 399px) {
+    body {
+        --fontSize: 5.5px !important;
+    }
+}
+
+/* Landscape - min-width: 500 ========================================================================================================== */
+
+@media (orientation: landscape) and (min-width: 500px) and (max-width: 599px) and (min-height: 200px) and (max-height: 299px) {
+    body {
+        --fontSize: 5px !important;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 500px) and (max-width: 599px) and (min-height: 300px) and (max-height: 399px) {
+    body {
+        --fontSize: 7.5px !important;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 500px) and (max-width: 599px) and (min-height: 400px) and (max-height: 499px) {
+    body {
+        --fontSize: 8.5px !important;
+    }
+}
+
+/* Landscape - min-width: 600 ========================================================================================================== */
+
+/* 40% */
+
+@media (orientation: landscape) and (min-width: 600px) and (max-width: 699px) and (min-height: 240px) and (max-height: 359px) {
+    body {
+        --fontSize: 6px !important;
+    }
+}
+
+/* 60% */
+
+@media (orientation: landscape) and (min-width: 600px) and (max-width: 699px) and (min-height: 360px) and (max-height: 479px) {
+    body {
+        --fontSize: 8.5px !important;
+    }
+}
+
+/* 80% */
+
+@media (orientation: landscape) and (min-width: 600px) and (max-width: 699px) and (min-height: 480px) and (max-height: 690px) {
+    body {
+        --fontSize: 9px !important;
+    }
+}
+
+/* Landscape - min-width: 700 ========================================================================================================== */
+
+/* 30% */
+
+@media (orientation: landscape) and (min-width: 700px) and (max-width: 799px) and (min-height: 210px) and (max-height: 279px) {
+    body {
+        --fontSize: 6px !important;
+    }
+}
+
+/* 40% */
+
+@media (orientation: landscape) and (min-width: 700px) and (max-width: 799px) and (min-height: 280px) and (max-height: 419px) {
+    body {
+        --fontSize: 7.5px !important;
+    }
+}
+
+/* 60% */
+
+@media (orientation: landscape) and (min-width: 700px) and (max-width: 799px) and (min-height: 420px) and (max-height: 559px) {
+    body {
+        --fontSize: 9px !important;
+    }
+}
+
+/* 80% */
+
+@media (orientation: landscape) and (min-width: 700px) and (max-width: 799px) and (min-height: 560px) and (max-height: 699px) {
+    body {
+        --fontSize: 10.5px !important;
+    }
+}
+
+/* Landscape - min-width: 800 ========================================================================================================== */
+
+/* 30% */
+
+@media (orientation: landscape) and (min-width: 800px) and (max-width: 999px) and (min-height: 240px) and (max-height: 319px) {
+    body {
+        --fontSize: 7px !important;
+    }
+}
+
+/* 40% */
+
+@media (orientation: landscape) and (min-width: 800px) and (max-width: 999px) and (min-height: 320px) and (max-height: 479px) {
+    body {
+        --fontSize: 9.5px !important;
+    }
+}
+
+/* 60% */
+
+@media (orientation: landscape) and (min-width: 800px) and (max-width: 999px) and (min-height: 480px) and (max-height: 639px) {
+    body {
+        --fontSize: 10.5px !important;
+    }
+}
+
+/* 80% */
+
+@media (orientation: landscape) and (min-width: 800px) and (max-width: 999px) and (min-height: 640px) and (max-height: 799px) {
+    body {
+        --fontSize: 11.5px !important;
+    }
+}
+
+/* Landscape - min-width: 1000 ========================================================================================================== */
+
+/* 30% */
+
+@media (orientation: landscape) and (min-width: 1000px) and (max-width: 1199px) and (min-height: 300px) and (max-height: 399px) {
+    body {
+        --fontSize: 9px !important;
+    }
+}
+
+/* 40% */
+
+@media (orientation: landscape) and (min-width: 1000px) and (max-width: 1199px) and (min-height: 400px) and (max-height: 599px) {
+    body {
+        --fontSize: 10px !important;
+    }
+}
+
+/* 60% */
+
+@media (orientation: landscape) and (min-width: 1000px) and (max-width: 1199px) and (min-height: 600px) and (max-height: 799px) {
+    body {
+        --fontSize: 12px !important;
+    }
+}
+
+/* 80% */
+
+@media (orientation: landscape) and (min-width: 1000px) and (max-width: 1199px) and (min-height: 800px) and (max-height: 999px) {
+    body {
+        --fontSize: 12px !important;
+    }
+}
+
+/* Landscape - min-width: 1200 ========================================================================================================== */
+
+/* 30% */
+
+@media (orientation: landscape) and (min-width: 1200px) and (max-width: 1299px) and (min-height: 360px) and (max-height: 479px) {
+    body {
+        --fontSize: 10px !important;
+    }
+}
+
+/* 40% */
+
+@media (orientation: landscape) and (min-width: 1200px) and (max-width: 1299px) and (min-height: 480px) and (max-height: 719px) {
+    body {
+        --fontSize: 12px !important;
+    }
+}
+
+/* 60% */
+
+@media (orientation: landscape) and (min-width: 1200px) and (max-width: 1299px) and (min-height: 720px) and (max-height: 1199px) {
+    body {
+        --fontSize: 13px !important;
+    }
+}
+
+/* 80% */
+
+/* @media (orientation: landscape) and (min-width: 1200px) and (min-height: 960px) {} */
+
+/* Landscape - min-width: 1300 ========================================================================================================== */
+
+/* 30% */
+
+@media (orientation: landscape) and (min-width: 1300px) and (max-width: 1399px) and (min-height: 340px) and (max-height: 629px) {
+    body {
+        --fontSize: 10.5px !important;
+    }
+}
+
+/* 40% */
+
+@media (orientation: landscape) and (min-width: 1300px) and (max-width: 1399px) and (min-height: 630px) and (max-height: 767px) {
+    body {
+        --fontSize: 15px !important;
+    }
+}
+
+/* most common====================================================================================================================== */
+
+@media (orientation: landscape) and (min-width: 1366px) and (max-width: 1399px) and (min-height: 768px) and (max-height: 1365px) {
+    body {
+        --fontSize: 16px !important;
+    }
+}
+
+/* 80% */
+
+/* @media (orientation: landscape) and (min-width: 1200px) and (min-height: 960px) {} */
+
+/* Landscape - min-width: 1400 ========================================================================================================== */
+
+/* 30% */
+
+@media (orientation: landscape) and (min-width: 1400px) and (max-width: 1599px) and (min-height: 420px) and (max-height: 559px) {
+    body {
+        --fontSize: 13px !important;
+    }
+}
+
+/* 40% */
+
+@media (orientation: landscape) and (min-width: 1400px) and (max-width: 1599px) and (min-height: 560px) and (max-height: 839px) {
+    body {
+        --fontSize: 14px !important;
+    }
+}
+
+/* 60% */
+
+@media (orientation: landscape) and (min-width: 1400px) and (max-width: 1599px) and (min-height: 840px) and (max-height: 1399px) {
+    body {
+        --fontSize: 17px !important;
+    }
+}
+
+/* 80% */
+
+/* @media (orientation: landscape) and (min-width: 1400px) and (min-height: 1040px) {} */
+
+/* Landscape - min-width: 1600 ========================================================================================================== */
+
+/* 30% */
+
+@media (orientation: landscape) and (min-width: 1600px) and (max-width: 1799px) and (min-height: 480px) and (max-height: 639px) {
+    body {
+        --fontSize: 14px !important;
+    }
+}
+
+/* 40% */
+
+@media (orientation: landscape) and (min-width: 1600px) and (max-width: 1799px) and (min-height: 640px) and (max-height: 959px) {
+    body {
+        --fontSize: 17.5px !important;
+    }
+}
+
+/* 60% */
+
+@media (orientation: landscape) and (min-width: 1600px) and (max-width: 1799px) and (min-height: 960px) and (max-height: 1599px) {
+    body {
+        --fontSize: 20px !important;
+    }
+}
+
+/* 80% */
+
+/* @media (orientation: landscape) and (min-width: 1600px) and (min-height: 1280px) {
+} */
+
+/* Landscape - min-width: 1750 ========================================================================================================== */
+
+/* 30% */
+
+@media (orientation: landscape) and (min-width: 1800px) and (min-height: 540px) and (max-height: 719px) {
+    body {
+        --fontSize: 15px !important;
+    }
+}
+
+/* 40% */
+
+@media (orientation: landscape) and (min-width: 1800px) and (min-height: 720px) and (max-height: 1079px) {
+    body {
+        --fontSize: 19px !important;
+    }
+}
+
+/* 60% */
+
+@media (orientation: landscape) and (min-width: 1800px) and (min-height: 1080px) and (max-height: 1439px) {
+    body {
+        --fontSize: 21px !important;
+    }
+}
+
+/* 80% */
+
+@media (orientation: landscape) and (min-width: 1800px) and (min-height: 1440px) {
+    body {
+        --fontSize: 23px !important;
+    }
+}
+
+/* ==================================================================================================================*/
+
+/* Portrait ==================================================================================================================*/
+
+/* ==================================================================================================================*/
+
+/* Portrait - min-width: 300px =================================================================================================================*/
+
+@media (orientation: portrait) and (min-width: 300px) and (min-height: 301px) {
+    body {
+        --fontSize: 9px !important;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 300px) and (min-height: 400px) {
+    body {
+        --fontSize: 10px !important;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 300px) and (min-height: 500px) {
+    body {
+        --fontSize: 12px !important;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 300px) and (min-height: 600px) {
+    body {
+        --fontSize: 12.2px !important;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 300px) and (min-height: 750px) {
+    body {
+        --fontSize: 13px !important;
+    }
+}
+
+/* Portrait - min-width: 400px =================================================================================================================*/
+
+@media (orientation: portrait) and (min-width: 400px) and (min-height: 401px) {
+    body {
+        --fontSize: 10px !important;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 400px) and (min-height: 500px) {
+    body {
+        --fontSize: 13px !important;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 400px) and (min-height: 600px) {
+    body {
+        --fontSize: 14.5px !important;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 400px) and (min-height: 800px) {
+    body {
+        --fontSize: 17px !important;
+    }
+}
+
+/* @media (orientation: portrait) and (min-width: 400px) and (min-height: 1000px) {} */
+
+/* Portrait - min-width: 500px =================================================================================================================*/
+
+@media (orientation: portrait) and (min-width: 500px) and (min-height: 501px) {
+    body {
+        --fontSize: 14px !important;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 500px) and (min-height: 625px) {
+    body {
+        --fontSize: 15.5px !important;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 500px) and (min-height: 750px) {
+    body {
+        --fontSize: 17px !important;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 500px) and (min-height: 1000px) {
+    body {
+        --fontSize: 21px !important;
+    }
+}
+
+/* @media (orientation: portrait) and (min-width: 500px) and (min-height: 1250px) {} */
+
+/* Portrait - min-width: 600px =================================================================================================================*/
+
+@media (orientation: portrait) and (min-width: 600px) and (min-height: 601px) {
+    body {
+        --fontSize: 16.5px !important;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 600px) and (min-height: 750px) {
+    body {
+        --fontSize: 18.5px !important;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 600px) and (min-height: 900px) {
+    body {
+        --fontSize: 21px !important;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 600px) and (min-height: 1200px) {
+    body {
+        --fontSize: 25px !important;
+    }
+}
+
+/* Portrait - min-width: 700px =================================================================================================================*/
+
+@media (orientation: portrait) and (min-width: 700px) and (min-height: 701px) {
+    body {
+        --fontSize: 18.5px !important;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 700px) and (min-height: 850px) {
+    body {
+        --fontSize: 21px !important;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 700px) and (min-height: 1050px) {
+    body {
+        --fontSize: 24px !important;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 700px) and (min-height: 1400px) {
+    body {
+        --fontSize: 27px !important;
+    }
+}
+
+/* Portrait - min-width: 800px =================================================================================================================*/
+
+@media (orientation: portrait) and (min-width: 800px) and (min-height: 801px) {
+    body {
+        --fontSize: 21px !important;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 800px) and (min-height: 1000px) {
+    body {
+        --fontSize: 23px !important;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 800px) and (min-height: 1200px) {
+    body {
+        --fontSize: 25px !important;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 800px) and (min-height: 1400px) {
+    body {
+        --fontSize: 28.5px !important;
+    }
+}

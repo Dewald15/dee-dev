@@ -1,0 +1,58 @@
+<section id="code" class="toad-fullscreen">
+
+    <div class="main-container-code">
+
+        <div class="code-title">
+            Code Laboratory
+        </div>
+
+        <div class="code-content-container">
+
+            <div class="titles-container bio-title-main">
+
+                <div class="biography-title">
+                    Showcase
+                </div>
+            </div>
+
+            <div class="page code-container bio-container">
+
+                <img *ngIf="codeImage" class="menu-icon code-image image image-black" [src]="codeImage"
+                    alt="code-image" />
+                <article class="code-list">
+
+                <div class="showcase-container">
+
+                    <div class='detail-info-sub-p showcase-one' (click)="onNavigate('.showcase-one','showcase-one')">
+                        <img *ngIf="cxfiOldImage" class="cxfi-old-image image" [src]="cxfiOldImage" alt="cxfi-old-image" />
+
+                        <div class='showcase-description'>cxfi</div>
+                    </div>
+
+                    <div class='detail-info-sub-p showcase-two' (click)="onNavigate('.showcase-two','showcase-two')">
+                        <img *ngIf="papillImage" class="papill-image image" [src]="papillImage" alt="papill-image" />
+
+                        <div class='showcase-description'>papill</div>
+                    </div>
+                </div>
+                </article>
+
+            </div>
+        </div>
+
+        <div class="code-title code-title-two">
+        </div>
+    </div>
+</section>
+<!--
+<section id="code" class="toad-fullscreen">
+
+    <div class="page code-container">
+
+        <div class="code-title">
+            My code
+        </div>
+
+
+    </div>
+</section> -->

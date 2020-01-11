@@ -459,7 +459,7 @@ article div {
    }
 
    .code-content-container {
-      height: calc(25 * var(--fontSize));
+      height: calc(38 * var(--fontSize));
    }
 
    .main-container-code {
@@ -480,8 +480,12 @@ article div {
       padding-right: calc(3 * var(--fontSize));
    }
 
-   .showcase-one {
+   .showcase-one,
+   .showcase-two
+    {
       margin-bottom: calc(1 * var(--fontSize));
    }
+
+
 }
 

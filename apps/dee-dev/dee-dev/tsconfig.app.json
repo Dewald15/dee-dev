@@ -1,7 +1,7 @@
 {
     "extends": "../../../tsconfig.json",
     "compilerOptions": {
-        "outDir": "../../../dist/out-tsc/apps/blueCircle",
+        "outDir": "../../../dist/out-tsc/apps/dee-dev",
         "module": "es2015"
     },
     "include": [

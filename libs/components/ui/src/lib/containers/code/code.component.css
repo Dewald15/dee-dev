@@ -61,7 +61,7 @@
    -webkit-box-direction: normal;
    -ms-flex-direction   : row;
    flex-direction       : row;
-   height               : calc(15 * var(--fontSize));
+   height               : calc(25 * var(--fontSize));
 }
 
 .titles-container {
@@ -277,7 +277,8 @@ article div {
 
 /*showcase-container  =========================== */
 
-.showcase-container {
+.showcase-container-one,
+.showcase-container-two {
    position          : relative;
    display           : -webkit-box;
    display           : -ms-flexbox;
@@ -304,14 +305,16 @@ article div {
    z-index              : -1;
 }
 
-.showcase-container.active {
+.showcase-container-one.active,
+.showcase-container-two.active {
    opacity           : 1;
    -webkit-transition: all 0.2s ease-in-out;
    transition        : all 0.2s ease-in-out;
    z-index           : 500;
 }
 
-.showcase-container .showcase-one {
+.showcase-container-one .showcase-one,
+.showcase-container-two .showcase-one {
    position              : relative;
    display               : -webkit-box;
    display               : -ms-flexbox;
@@ -336,7 +339,8 @@ article div {
    transition            : all 0.2s ease-in-out;
 }
 
-.showcase-container .showcase-two {
+.showcase-container-one .showcase-two,
+.showcase-container-two .showcase-two {
    position              : relative;
    display               : -webkit-box;
    display               : -ms-flexbox;
@@ -360,9 +364,10 @@ article div {
    transition            : all 0.2s ease-in-out;
 }
 
-.showcase-container .showcase-one:hover,
-.showcase-container .showcase-two:hover {
-   /* border: 2px solid rgba(255, 255, 255, 0.5); */
+.showcase-container-one .showcase-one:hover,
+.showcase-container-two .showcase-one:hover,
+.showcase-container-one .showcase-two:hover,
+.showcase-container-two .showcase-two:hover {
    box-shadow: 0 0 2px 1.5px rgba(255, 255, 255, 0.5);
    -webkit-transition    : all 0.25s ease-in-out;
    transition            : all 0.25s ease-in-out;
@@ -386,11 +391,12 @@ article div {
    transition        : all 0.2s ease-in-out;
 }
 
-.cxfi-old-image {
+.cxfi-old-image,
+.papill-image,
+.dee-dev-image {
    position          : relative;
    width             : calc(14.5 * var(--fontSize));
    top               : 0;
-   /* left           : calc(2.5 * var(--fontSize)); */
    opacity           : 0;
    z-index           : 0;
    cursor            : none;
@@ -398,35 +404,10 @@ article div {
    transition        : all 0.2s ease-in-out;
 }
 
-.papill-image {
-   position          : relative;
-   width             : calc(14.5 * var(--fontSize));
-   top               : 0;
-   /* left           : calc(2.5 * var(--fontSize)); */
-   opacity           : 0;
-   z-index           : 0;
-   cursor            : none;
-   -webkit-transition: all 0.2s ease-in-out;
-   transition        : all 0.2s ease-in-out;
-}
-
-.active>.pdf-image {
-   z-index           : 500 !important;
-   opacity           : 1 !important;
-   cursor            : pointer !important;
-   -webkit-transition: all 0.2s ease-in-out !important;
-   transition        : all 0.2s ease-in-out !important;
-}
-
-.active>.detail-info-sub-p>.cxfi-old-image {
-   z-index           : 500 !important;
-   opacity           : 1 !important;
-   cursor            : pointer !important;
-   -webkit-transition: all 0.2s ease-in-out !important;
-   transition        : all 0.2s ease-in-out !important;
-}
-
-.active>.detail-info-sub-p>.papill-image {
+.active>.pdf-image,
+.active>.detail-info-sub-p>.cxfi-old-image,
+.active>.detail-info-sub-p>.papill-image,
+.active>.detail-info-sub-p>.dee-dev-image {
    z-index           : 500 !important;
    opacity           : 1 !important;
    cursor            : pointer !important;
@@ -469,7 +450,8 @@ article div {
       display: none;
    }
 
-   .showcase-container {
+   .showcase-container-one,
+   .showcase-container-two {
       -webkit-box-orient   : vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction   : column;

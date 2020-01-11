@@ -13,7 +13,7 @@ import { wwwEnvironment, brandConfig } from './config';
 @NgModule( {
     imports: [
         StoreModule.forRoot( {}, { metaReducers: !wwwEnvironment.production ? [storeFreeze] : [] } ),
-        !wwwEnvironment.production ? StoreDevtoolsModule.instrument( { name: 'blueCircle', maxAge: 250 } ) : [],
+        !wwwEnvironment.production ? StoreDevtoolsModule.instrument( { name: 'dee-dev', maxAge: 250 } ) : [],
         MainModule.forRoot( brandConfig, wwwEnvironment )
     ],
     declarations: [AppComponent],

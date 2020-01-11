@@ -19,7 +19,7 @@ window.addEventListener( "orientationchange", function () {
 } );
 
 @Component( {
-    selector: 'blueCircle-ui-landing',
+    selector: 'dee-dev-ui-landing',
     templateUrl: './landing.component.html',
     styleUrls: ['./landing.component.css']
 } )
@@ -34,19 +34,19 @@ export class LandingComponent implements OnInit, OnChanges, AfterViewInit {
 
     // @HostListener( 'click', ['$event.target'] )
     // landingClicked ( target ) {
-    //     this.landingListItemState.subscribe( object => this.localBlueCircleCurrentState = object );
+    //     this.landingListItemState.subscribe( object => this.localdee-devCurrentState = object );
     //     this.sectionLanding = document.querySelector( '.section-landing' );
-    //     this.blueCircleInner = document.querySelector( '.blueCircle-inner' );
+    //     this.dee-devInner = document.querySelector( '.dee-dev-inner' );
 
-    //     if ( target && this.sectionLanding && this.blueCircleInner && this.sectionLanding !== undefined && this.blueCircleInner !== undefined ) {
-    //         if ( target.classList.contains( 'blueCircleState' ) ) {
-    //             if ( this.localBlueCircleCurrentState.state === 'none' ) {
+    //     if ( target && this.sectionLanding && this.dee-devInner && this.sectionLanding !== undefined && this.dee-devInner !== undefined ) {
+    //         if ( target.classList.contains( 'dee-devState' ) ) {
+    //             if ( this.localdee-devCurrentState.state === 'none' ) {
     //                 this.sectionLanding.classList.remove( 'clicked' );
-    //                 this.blueCircleInner.classList.remove( 'clicked' );
+    //                 this.dee-devInner.classList.remove( 'clicked' );
 
-    //             } else if ( this.localBlueCircleCurrentState.state === 'one' ) {
+    //             } else if ( this.localdee-devCurrentState.state === 'one' ) {
     //                 this.sectionLanding.classList.add( 'clicked' );
-    //                 this.blueCircleInner.classList.add( 'clicked' );
+    //                 this.dee-devInner.classList.add( 'clicked' );
     //             }
     //         }
     //     }

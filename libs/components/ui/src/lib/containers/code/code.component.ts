@@ -16,10 +16,12 @@ export class
     localState;
     codeContainer;
     resume;
-    showcaseContainer;
+    showcaseContainerOne;
+    showcaseContainerTwo;
     pdfImage;
     cxfiOldImage;
     papillImage;
+    deeDevImage;
 
     @Input()
     landingState: StateConfig;
@@ -27,7 +29,7 @@ export class
     state: EventEmitter<void> = new EventEmitter();
 
     // @Input()
-    // landingBlueCircleState: BlueCircleState;
+    // landingdee-devState: dee-devState;
     // listItemInfoListItemDetailState: EventEmitter<ListItemDetailState> = new EventEmitter();
     // @Output()
     // scrolling: EventEmitter<void> = new EventEmitter();
@@ -37,6 +39,7 @@ export class
         this.pdfImage = images.icons.pdf;
         this.cxfiOldImage = images.showcase.cxfiOld;
         this.papillImage = images.showcase.papill;
+        this.deeDevImage = images.showcase.deeDev;
         if ( this.landingState ) this.localState = this.landingState;
     }
 
@@ -52,21 +55,25 @@ export class
         this.localState = this.landingState;
         this.state.emit( { ...this.localState } );
         this.codeContainer = document.querySelector( ".main-container-code" );
-        this.showcaseContainer = document.querySelector( '.showcase-container' );
+        this.showcaseContainerOne = document.querySelector( '.showcase-container-one' );
+        this.showcaseContainerTwo = document.querySelector( '.showcase-container-two' );
 
         if ( this.landingState && this.landingState.menu && this.landingState.menu.lastMenuClicked === 3 ) {
             if ( this.codeContainer ) this.codeContainer.classList.add( 'code-page' );
-            if ( this.showcaseContainer ) this.showcaseContainer.classList.add( 'active' );
+            if ( this.showcaseContainerOne ) this.showcaseContainerOne.classList.add( 'active' );
+            if ( this.showcaseContainerTwo ) this.showcaseContainerTwo.classList.add( 'active' );
         } else {
             if ( this.codeContainer ) this.codeContainer.classList.remove( 'code-page' );
-            if ( this.showcaseContainer ) this.showcaseContainer.classList.remove( 'active' );
+            if ( this.showcaseContainerOne ) this.showcaseContainerOne.classList.remove( 'active' );
+            if ( this.showcaseContainerTwo ) this.showcaseContainerTwo.classList.remove( 'active' );
         }
         this.localState = this.landingState;
     }
 
     ngAfterViewInit () {
         this.resume = document.querySelector( '.resume-p' );
-        this.showcaseContainer = document.querySelector( '.showcase-container' );
+        this.showcaseContainerOne = document.querySelector( '.showcase-container-one' );
+        this.showcaseContainerTwo = document.querySelector( '.showcase-container-two' );
     }
 
     onNavigate ( className: string, path: string ) {
@@ -84,6 +91,8 @@ export class
                     ? this._store.dispatch( new routerStore.OpenUrl( `https://cxfi-old.firebaseapp.com` ) )
                     : path === 'showcase-two'
                         ? this._store.dispatch( new routerStore.OpenUrl( `https://papill.firebaseapp.com` ) )
+                        : path === 'showcase-three'
+                        ? this._store.dispatch( new routerStore.OpenUrl( `https://github.com/Dewald15/dee-dev` ) )
                         : path === 'demo'
                             ? console.log( 'demo action required' )
                             : console.log( 'error in list-items-detail.component.ts: onNavigate()' );

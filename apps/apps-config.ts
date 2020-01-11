@@ -4,6 +4,6 @@ export interface AppsConfig {
 
 export const appsConfig: AppsConfig = {
    data: [
-      { name: 'blueCircle'}
+      { name: 'dee-dev'}
   ]
 }

@@ -21,7 +21,7 @@
                     alt="code-image" />
                 <article class="code-list">
 
-                <div class="showcase-container">
+                <div class="showcase-container-one">
 
                     <div class='detail-info-sub-p showcase-one' (click)="onNavigate('.showcase-one','showcase-one')">
                         <img *ngIf="cxfiOldImage" class="cxfi-old-image image" [src]="cxfiOldImage" alt="cxfi-old-image" />
@@ -33,6 +33,14 @@
                         <img *ngIf="papillImage" class="papill-image image" [src]="papillImage" alt="papill-image" />
 
                         <div class='showcase-description'>papill</div>
+                    </div>
+                </div>
+                <div class="showcase-container-two">
+
+                    <div class='detail-info-sub-p showcase-one' (click)="onNavigate('.showcase-one','showcase-three')">
+                        <img *ngIf="deeDevImage" class="dee-dev-image image" [src]="deeDevImage" alt="deeDev-image" />
+
+                        <div class='showcase-description'>git - dee-dev (portfolio code)</div>
                     </div>
                 </div>
                 </article>

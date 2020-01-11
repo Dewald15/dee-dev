@@ -11,7 +11,7 @@
         "./test.ts"
     ],
     "include": [
-        "./apps/blueCircle/blueCircle/src/typings.d.ts",
+        "./apps/dee-dev/dee-dev/src/typings.d.ts",
         "./apps/**/*.spec.ts",
         "./libs/**/*.spec.ts"
     ],

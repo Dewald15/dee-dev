@@ -18,7 +18,7 @@ window.addEventListener( "orientationchange", function () {
 } );
 
 @Component( {
-    selector: 'blueCircle-list-items',
+    selector: 'dee-dev-list-items',
     templateUrl: './list-items.component.html',
     styleUrls: ['./list-items.component.css']
 } )

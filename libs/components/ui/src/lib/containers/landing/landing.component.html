@@ -1,29 +1,29 @@
 <section class="section-shell" id='section-shell' (mousemove)="showCoords($event)">
     <!-- <img *ngIf="mainBackground" class="main-background-image image image-white" [src]="mainBackground"
         alt="mainBackground-image" />
-    <img *ngIf="logo" class="logo-image image" [src]="logo" alt="logo-image" (click)='blueCircleClick()'/> -->
+    <img *ngIf="logo" class="logo-image image" [src]="logo" alt="logo-image" (click)='dee-devClick()'/> -->
 
-    <!-- (listItemInfoBlueCircleState)="changeBlueCircleState($event)"
+    <!-- (listItemInfodee-devState)="changedee-devState($event)"
     (listItemInfoListItemState)="changeListItemState($event)"
     (listItemInfoListItemInfoState)="changeListItemInfoState($event)"
     (listItemInfoListItemDetailState)="changeListItemDetailState($event)"
     [landingListItemState]='landingListItemState | async'
-    [landingBlueCircleState]='landingBlueCircleState | async'
+    [landingdee-devState]='landingdee-devState | async'
     [landingListItemInfoState]='landingListItemInfoState | async'
     [landingListItemDetailState]='landingListItemDetailState | async'> -->
     <!-- <div class="landing-left"> -->
-    <!-- <blueCircle-list-items-info class="list-items-info" (scrolling)='scrolling()'></blueCircle-list-items-info> -->
+    <!-- <dee-dev-list-items-info class="list-items-info" (scrolling)='scrolling()'></dee-dev-list-items-info> -->
     <!-- </div> -->
 
     <!-- <div class="landing-right"> -->
     <!-- <img *ngIf="backImage" class="back-image image image-white" [src]="backImage" alt="back-image"
             (click)='onBackClick()' /> -->
 
-    <!-- <blueCircle-home class="main-home"></blueCircle-home>
-        <blueCircle-about-me class="main-about-me"></blueCircle-about-me>
-        <blueCircle-skills class="main-skills"></blueCircle-skills>
-        <blueCircle-code-lab class="main-code-lab"></blueCircle-code-lab>
-        <blueCircle-talk-to-me class="main-talk-to-me"></blueCircle-talk-to-me> -->
+    <!-- <dee-dev-home class="main-home"></dee-dev-home>
+        <dee-dev-about-me class="main-about-me"></dee-dev-about-me>
+        <dee-dev-skills class="main-skills"></dee-dev-skills>
+        <dee-dev-code-lab class="main-code-lab"></dee-dev-code-lab>
+        <dee-dev-talk-to-me class="main-talk-to-me"></dee-dev-talk-to-me> -->
     <home class="page home-page" (state)="changeState($event)" [landingState]='landingState | async'>
     </home>
     <about class="page about-page" (state)="changeState($event)" [landingState]='landingState | async'>
@@ -35,7 +35,7 @@
     <contact class="page contact-page" (state)="changeState($event)" [landingState]='landingState | async'>
     </contact>
 
-    <blueCircle-list-items class="list-item" (state)="changeState($event)" [landingState]='landingState | async'>
-    </blueCircle-list-items>
+    <dee-dev-list-items class="list-item" (state)="changeState($event)" [landingState]='landingState | async'>
+    </dee-dev-list-items>
     <!-- </div> -->
 </section>

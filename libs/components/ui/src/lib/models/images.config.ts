@@ -16,6 +16,7 @@ export interface ImagesConfig {
     showcase: {
         cxfiOld: string;
         papill: string;
+        deeDev: string;
     }
     headShot: string;
 }

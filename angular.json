@@ -8,9 +8,9 @@
         }
     },
     "projects": {
-        "blueCircle": {
-            "root": "apps/blueCircle/blueCircle/",
-            "sourceRoot": "apps/blueCircle/blueCircle/src",
+        "dee-dev": {
+            "root": "apps/dee-dev/dee-dev/",
+            "sourceRoot": "apps/dee-dev/dee-dev/src",
             "projectType": "application",
             "prefix": "app",
             "schematics": {},
@@ -19,17 +19,17 @@
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
                         "outputPath": "dist",
-                        "index": "apps/blueCircle/blueCircle/src/index.html",
-                        "main": "apps/blueCircle/blueCircle/src/main.ts",
-                        "polyfills": "apps/blueCircle/blueCircle/src/polyfills.ts",
-                        "tsConfig": "apps/blueCircle/blueCircle/tsconfig.app.json",
+                        "index": "apps/dee-dev/dee-dev/src/index.html",
+                        "main": "apps/dee-dev/dee-dev/src/main.ts",
+                        "polyfills": "apps/dee-dev/dee-dev/src/polyfills.ts",
+                        "tsConfig": "apps/dee-dev/dee-dev/tsconfig.app.json",
                         "assets": [
-                            "apps/blueCircle/blueCircle/src/favicon.ico",
-                            "apps/blueCircle/blueCircle/src/assets",
-                            "apps/blueCircle/blueCircle/src/assets/images",
-                            "apps/blueCircle/blueCircle/src/assets/images/background",
-                            "apps/blueCircle/blueCircle/src/assets/images/logo",
-                            "apps/blueCircle/blueCircle/src/assets/images/icons",
+                            "apps/dee-dev/dee-dev/src/favicon.ico",
+                            "apps/dee-dev/dee-dev/src/assets",
+                            "apps/dee-dev/dee-dev/src/assets/images",
+                            "apps/dee-dev/dee-dev/src/assets/images/background",
+                            "apps/dee-dev/dee-dev/src/assets/images/logo",
+                            "apps/dee-dev/dee-dev/src/assets/images/icons",
                             {
                                 "glob": "**/*",
                                 "input": "libs/components/coming-soon/src/lib/assets",
@@ -37,14 +37,14 @@
                             }
                         ],
                         "styles": [
-                            "apps/blueCircle/blueCircle/src/styles.css",
+                            "apps/dee-dev/dee-dev/src/styles.css",
                             "libs/components/assets/styles.css",
                             "libs/components/assets/fonts.css",
                             "libs/components/assets/media.css"
                         ],
                         "scripts": [
                             "node_modules/jquery/dist/jquery.min.js",
-                            "apps/blueCircle/blueCircle/src/assets/form-submission-handler.js"
+                            "apps/dee-dev/dee-dev/src/assets/form-submission-handler.js"
                         ]
                     },
                     "configurations": {
@@ -59,8 +59,8 @@
                             "vendorChunk": false,
                             "buildOptimizer": true,
                             "fileReplacements": [{
-                                "replace": "apps/blueCircle/blueCircle/src/environments/environment.ts",
-                                "with": "apps/blueCircle/blueCircle/src/environments/environment.next.ts"
+                                "replace": "apps/dee-dev/dee-dev/src/environments/environment.ts",
+                                "with": "apps/dee-dev/dee-dev/src/environments/environment.next.ts"
                             }]
                         },
                         "prod": {
@@ -74,8 +74,8 @@
                             "vendorChunk": false,
                             "buildOptimizer": true,
                             "fileReplacements": [{
-                                "replace": "apps/blueCircle/blueCircle/src/environments/environment.ts",
-                                "with": "apps/blueCircle/blueCircle/src/environments/environment.prod.ts"
+                                "replace": "apps/dee-dev/dee-dev/src/environments/environment.ts",
+                                "with": "apps/dee-dev/dee-dev/src/environments/environment.prod.ts"
                             }]
                         }
                     }
@@ -83,37 +83,37 @@
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
-                        "browserTarget": "blueCircle:build"
+                        "browserTarget": "dee-dev:build"
                     },
                     "configurations": {
                         "next": {
-                            "browserTarget": "blueCircle:build:next"
+                            "browserTarget": "dee-dev:build:next"
                         },
                         "prod": {
-                            "browserTarget": "blueCircle:build:prod"
+                            "browserTarget": "dee-dev:build:prod"
                         }
                     }
                 },
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "blueCircle:build"
+                        "browserTarget": "dee-dev:build"
                     }
                 },
                 "test": {
                     "builder": "@angular-devkit/build-angular:karma",
                     "options": {
-                        "main": "apps/blueCircle/blueCircle/src/test.ts",
-                        "polyfills": "apps/blueCircle/blueCircle/src/polyfills.ts",
-                        "tsConfig": "apps/blueCircle/blueCircle/tsconfig.spec.json",
-                        "karmaConfig": "apps/blueCircle/blueCircle/karma.conf.js",
+                        "main": "apps/dee-dev/dee-dev/src/test.ts",
+                        "polyfills": "apps/dee-dev/dee-dev/src/polyfills.ts",
+                        "tsConfig": "apps/dee-dev/dee-dev/tsconfig.spec.json",
+                        "karmaConfig": "apps/dee-dev/dee-dev/karma.conf.js",
                         "styles": [
-                            "apps/blueCircle/blueCircle/src/styles.css"
+                            "apps/dee-dev/dee-dev/src/styles.css"
                         ],
                         "scripts": [],
                         "assets": [
-                            "apps/blueCircle/blueCircle/src/favicon.ico",
-                            "apps/blueCircle/blueCircle/src/assets"
+                            "apps/dee-dev/dee-dev/src/favicon.ico",
+                            "apps/dee-dev/dee-dev/src/assets"
                         ]
                     }
                 },
@@ -121,8 +121,8 @@
                     "builder": "@angular-devkit/build-angular:tslint",
                     "options": {
                         "tsConfig": [
-                            "apps/blueCircle/blueCircle/tsconfig.app.json",
-                            "apps/blueCircle/blueCircle/tsconfig.spec.json"
+                            "apps/dee-dev/dee-dev/tsconfig.app.json",
+                            "apps/dee-dev/dee-dev/tsconfig.spec.json"
                         ],
                         "exclude": [
                             "**/node_modules/**"
@@ -131,26 +131,26 @@
                 }
             }
         },
-        "blueCirclei-e2e": {
-            "root": "apps/blueCircle/blueCircle-e2e/",
+        "dee-devi-e2e": {
+            "root": "apps/dee-dev/dee-dev-e2e/",
             "projectType": "application",
             "architect": {
                 "e2e": {
                     "builder": "@angular-devkit/build-angular:protractor",
                     "options": {
-                        "protractorConfig": "apps/blueCircle/blueCircle-e2e/protractor.conf.js",
-                        "devServerTarget": "blueCircle:serve"
+                        "protractorConfig": "apps/dee-dev/dee-dev-e2e/protractor.conf.js",
+                        "devServerTarget": "dee-dev:serve"
                     },
                     "configurations": {
                         "production": {
-                            "devServerTarget": "blueCircle:serve:production"
+                            "devServerTarget": "dee-dev:serve:production"
                         }
                     }
                 },
                 "lint": {
                     "builder": "@angular-devkit/build-angular:tslint",
                     "options": {
-                        "tsConfig": "apps/blueCircle/blueCircle-e2e/tsconfig.e2e.json",
+                        "tsConfig": "apps/dee-dev/dee-dev-e2e/tsconfig.e2e.json",
                         "exclude": [
                             "**/node_modules/**"
                         ]
@@ -193,7 +193,7 @@
             "root": "libs/components/ui",
             "sourceRoot": "libs/components/ui/src",
             "projectType": "library",
-            "prefix": "blueCircle",
+            "prefix": "dee-dev",
             "architect": {
                 "test": {
                     "builder": "@angular-devkit/build-angular:karma",
@@ -218,7 +218,7 @@
             }
         }
     },
-    "defaultProject": "blueCircle",
+    "defaultProject": "dee-dev",
     "cli": {
         "warnings": {
             "typescriptMismatch": false

@@ -3,7 +3,7 @@ import { Component, OnChanges, OnInit, HostListener } from '@angular/core';
 import { VideoOverlayService } from '../../services';
 
 @Component({
-    selector: 'blueCircle-ui-video-overlay',
+    selector: 'dee-dev-ui-video-overlay',
     templateUrl: './video-overlay.component.html',
     styleUrls: ['./video-overlay.component.css']
 })

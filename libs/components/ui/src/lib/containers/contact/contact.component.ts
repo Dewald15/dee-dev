@@ -33,7 +33,7 @@ export class
     state: EventEmitter<void> = new EventEmitter();
 
     // @Input()
-    // landingBlueCircleState: BlueCircleState;
+    // landingdee-devState: dee-devState;
     // listItemInfoListItemDetailState: EventEmitter<ListItemDetailState> = new EventEmitter();
     // @Output()
     // scrolling: EventEmitter<void> = new EventEmitter();

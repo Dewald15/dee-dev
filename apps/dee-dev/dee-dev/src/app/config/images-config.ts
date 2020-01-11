@@ -17,7 +17,8 @@ export const imagesConfig: ImagesConfig = {
     },
     showcase: {
         cxfiOld: '../assets/images/info/showcase/cxfi-old.png',
-        papill: '../assets/images/info/showcase/papill.png'
+        papill: '../assets/images/info/showcase/papill.png',
+        deeDev: '../assets/images/info/showcase/dee-dev.png'
     },
     headShot: '../assets/images/info/my-headshot.png'
 };

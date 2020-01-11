@@ -13,7 +13,7 @@ import { ImagesConfig, BrandConfig } from '../../models';
 type State = any;
 
 @Component( {
-    selector: 'blueCircle-ui-shell',
+    selector: 'dee-dev-ui-shell',
     templateUrl: './shell.component.html',
     styleUrls: ['shell.component.css'],
     changeDetection: ChangeDetectionStrategy.OnPush

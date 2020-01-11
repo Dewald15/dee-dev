@@ -1,10 +1,10 @@
 {
     "npmScope": "dee-dev",
     "projects": {
-        "blueCircle": {
+        "dee-dev": {
             "tags": []
         },
-        "blueCircle-e2e": {
+        "dee-dev-e2e": {
             "tags": []
         },
         "core-main": {

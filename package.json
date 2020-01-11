@@ -9,10 +9,10 @@
     "scripts": {
         "// serve processes": "",
         "serve": "ng serve",
-        "serve:dee-dev": "ng serve blueCircle",
+        "serve:dee-dev": "ng serve dee-dev",
         "// build processes": "",
         "build": "yarn build:papill-io:www",
-        "build:dee-dev": "ng build blueCircle",
+        "build:dee-dev": "ng build dee-dev",
         "build:dee-dev:next": "ng build dee-dev --configuration=next",
         "build:dee-dev:prod": "ng build dee-dev --configuration=prod",
         "// testing": "",

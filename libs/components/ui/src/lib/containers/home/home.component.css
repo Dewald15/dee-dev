@@ -213,8 +213,10 @@ svg.intro.go .text-stroke-eight {
    -webkit-animation-delay: 7s;
    animation-delay        : 7s;
 }
-
-.home-container.landscape svg.intro.go .text.text-one,
+/* commented out as of issue when loading this css before parent container created so size is unknown. 
+   Have set this in ts file in the ngAfterViewInit() method */
+   
+/* .home-container.landscape svg.intro.go .text.text-one,
 svg.intro.go .text.text-one,
 .home-container.landscape svg.intro.go .text-stroke.text-stroke-one,
 svg.intro.go .text-stroke.text-stroke-one {
@@ -222,7 +224,7 @@ svg.intro.go .text-stroke.text-stroke-one {
    transform-origin        : top;
    -webkit-transform       : scale(3.5) translate(50%, 2.5%);
    transform               : scale(3.5) translate(50%, 2.5%);
-}
+} */ 
 
 .home-container.landscape svg.intro.go .text.text-two,
 svg.intro.go .text.text-two,

@@ -79,6 +79,27 @@ export class
     }
 
     ngAfterViewInit () {
+
+        const textTextOne =  document.querySelector( '.text.text-one' );
+        const textStrokeTextStrokeOne =  document.querySelector( '.text-stroke.text-stroke-one' );
+
+        textTextOne.setAttribute('style', `
+            -webkit-transform-origin: top;
+            transform-origin        : top;
+            -webkit-transform       : scale(3.5) translate(50%, 2.5%);
+            transform               : scale(3.5) translate(50%, 2.5%);
+        `);
+
+        textStrokeTextStrokeOne.setAttribute('style', `
+            -webkit-transform-origin: top;
+            transform-origin        : top;
+            -webkit-transform       : scale(3.5) translate(50%, 2.5%);
+            transform               : scale(3.5) translate(50%, 2.5%);
+        `);
+        console.log(textTextOne)
+        console.log(textStrokeTextStrokeOne)
+
+
         const headshotImage = document.querySelector( '.headshot-image' );
         const rotatingText = document.querySelector( '.rotating-text' );
         const intro = document.querySelector( '.intro' );

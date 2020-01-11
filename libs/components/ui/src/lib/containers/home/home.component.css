@@ -530,8 +530,8 @@ div {
    .home-container.portrait svg.intro.go .text-stroke.text-stroke-six {
       -webkit-transform-origin: top;
       transform-origin        : top;
-      -webkit-transform       : scale(1.4) translate(50%, 53%);
-      transform               : scale(1.4) translate(50%, 53%);
+      -webkit-transform       : scale(1) translate(50%, 75%);
+      transform               : scale(1) translate(50%, 75%);
    }
 
 
@@ -539,8 +539,8 @@ div {
    .home-container.portrait svg.intro.go .text-stroke.text-stroke-seven {
       -webkit-transform-origin: top;
       transform-origin        : top;
-      -webkit-transform       : scale(1.25) translate(50%, 62%);
-      transform               : scale(1.25) translate(50%, 62%);
+      -webkit-transform       : scale(1) translate(50%, 78%);
+      transform               : scale(1) translate(50%, 78%);
    }
 
    .home-container.portrait svg.intro.go .text.text-eight,

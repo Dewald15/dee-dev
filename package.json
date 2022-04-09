@@ -86,7 +86,7 @@
         "jquery": "^3.4.0",
         "jsdom": "^14.0.0",
         "lodash": "4.17.11",
-        "moment": "2.22.2",
+        "moment": "2.29.2",
         "ng2-pdf-viewer": "5.2.3",
         "ngrx-store-freeze": "0.2.4",
         "rxjs": "6.3.3",
